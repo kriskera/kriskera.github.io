@@ -408,6 +408,7 @@ green {
 
 div.socials {
   position: absolute;
+  display: block;
   bottom: 2vw;
   display: flex;
   margin: 0 auto;
