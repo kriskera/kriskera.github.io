@@ -28,6 +28,11 @@ body {
   src: url("/assets/fonts/Minecraft.ttf");
 }
 
+@font-face {
+  font-family: "Cactus Jack";
+  src: url("/assets/fonts/Cactus\ Jack.ttf");
+}
+
 /* Cursor */
 .cursor-dot,
 .cursor-dot-outline {
@@ -528,6 +533,35 @@ dark green - color: #00D574;
 
 .section1-container-item .s1ci-center span:nth-child(2){
   margin-right: 7vw;
+}
+
+.draw-text {
+  font-family: "Cactus Jack";
+  color: #fff;
+  font-size: 2vw;
+  position: absolute;
+  top: 3vw;
+  left: 0;
+}
+
+.fftdraw {
+  position: absolute;
+  top: 3vw;
+  left: 1vw;
+}
+
+.fftdraw img {
+  width: 15vw;
+}
+
+.welcome-to {
+  position: absolute;
+  right: 1.5vw;
+  bottom: 1vw;
+}
+
+.welcome-to img {
+  width: 17vw;
 }
 
 div.socials {
