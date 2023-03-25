@@ -103,7 +103,7 @@ body {
 .mask {
   position: relative;
   padding: 0;
-  height: 1.2vw;
+  height: 1.1vw;
 
   /*  Remove overflow to see how it works　:) */
   overflow: hidden;
@@ -340,6 +340,7 @@ green {
 }
 
 .section1 {
+    cursor: pointer;
     position: relative;
     display: block;
     width: 100%;
@@ -373,24 +374,141 @@ green {
   font-weight: 600;
 }
 
-.section1-container-item .s1ci-tb span {
-  height: 12vw;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+.section1-container-item .s1ci-tb svg {
+  width: 2.5vw;
+  align-self: center;
+  margin-top: 2.8vw;
 }
 
-.section1-container-item .s1ci-tb svg {
-  margin-top: 3vw;
-  align-self: center;
-  width: 2.5vw;
-}
 .section1-container-item .s1ci-tb .text {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
+  height: 12vw;
 }
 
+.section1-container-item .s1ci-tb .text div {
+  display: flex;
+  align-items: baseline;
+}
+
+/* 
+red- color: #FF2C49;
+orange - color: #FF6D46;
+yellow - color: #FFE751;
+green - color: #2FF630;
+blue - color: #00AAF8;
+purple - color: #7D5EF7;
+dark green - color: #00D574;
+ */
+
+
+.bit-color-shift:hover .bit-letter{
+  animation: color-animation 1s linear infinite;
+}
+
+.bit-letter-1 {
+  --color-1: #FF2C49;
+  --color-2: #00D574;
+  --color-3: #7D5EF7;
+  --color-4: #00AAF8;
+  --color-5: #2FF630;
+  --color-6: #FFE751;
+  --color-7: #FF6D46;
+
+  color: #FF2C49;
+}
+
+.bit-letter-2 {
+  --color-1: #FF6D46;
+  --color-2: #FF2C49;
+  --color-3: #00D574;
+  --color-4: #7D5EF7;
+  --color-5: #00AAF8;
+  --color-6: #2FF630;
+  --color-7: #FFE751;
+
+  color: #FF6D46;
+}
+
+.bit-letter-3 {
+  --color-1: #FFE751;
+  --color-2: #FF6D46;
+  --color-3: #FF2C49;
+  --color-4: #00D574;
+  --color-5: #7D5EF7;
+  --color-6: #00AAF8;
+  --color-7: #2FF630;
+
+  color: #FFE751;
+}
+
+.bit-letter-4 {
+  --color-1: #2FF630;
+  --color-2: #FFE751;
+  --color-3: #FF6D46;
+  --color-4: #FF2C49;
+  --color-5: #00D574;
+  --color-6: #7D5EF7;
+  --color-7: #00AAF8;
+
+  color: #2FF630;
+}
+
+.bit-letter-5 {
+  --color-1: #00AAF8;
+  --color-2: #2FF630; 
+  --color-3: #FFE751;
+  --color-4: #FF6D46;
+  --color-5: #FF2C49;
+  --color-6: #00D574;
+  --color-7: #7D5EF7;
+
+  color: #00AAF8;
+}
+
+.bit-letter-6 {
+  --color-1: #7D5EF7;
+  --color-2: #00AAF8;
+  --color-3: #2FF630;
+  --color-4: #FFE751;
+  --color-5: #FF6D46;
+  --color-6: #FF2C49;
+  --color-7: #00D574;
+
+  color: #7D5EF7;
+}
+
+.bit-letter-7 {
+  --color-1: #00D574;
+  --color-2: #7D5EF7;
+  --color-3: #00AAF8;
+  --color-4: #2FF630;
+  --color-5: #FFE751;
+  --color-6: #FF6D46;
+  --color-7: #FF2C49;
+
+  color: #00D574;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  14%   {color: var(--color-1)}
+  15%   {color: var(--color-2)}
+  28%   {color: var(--color-2)}
+  29%   {color: var(--color-3)}
+  42%   {color: var(--color-3)}
+  43%   {color: var(--color-4)}
+  56%  {color: var(--color-4)}
+  57%  {color: var(--color-5)}
+  70%  {color: var(--color-5)}
+  71%  {color: var(--color-6)}
+  84%  {color: var(--color-6)}
+  85%  {color: var(--color-7)}
+  100%  {color: var(--color-7)}
+}
+
+/* Here are just some visual styles. 🖌 */
 
 .section1-container-item .s1ci-center {
   position: absolute;
@@ -415,19 +533,31 @@ green {
 div.socials {
   position: absolute;
   display: block;
-  bottom: 2vw;
+  bottom: 0;
   display: flex;
   margin: 0 auto;
+  padding: 4vw;
+  gap: 2.7vw;
 }
 
 div.socials a {
   color: #fff;
+  position: relative;
   margin: 0.7vw;
 }
 
 div.socials a svg {
-  width: 1.8vw;
-  height: 1.8vw;
+  width: 2vw;
+  height: 2vw;
+  color: #fff;
+  fill: #fff;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+div.socials a svg:hover {
+  /* width: 2.6vw;
+  height: 2.6vw; */
+  transform: scale(1.4);
   color: #fff;
   fill: #fff;
 }
