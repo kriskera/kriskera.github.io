@@ -536,8 +536,8 @@ div.socials {
   bottom: 0;
   display: flex;
   margin: 0 auto;
-  padding: 3vw;
-  gap: 1.5vw;
+  padding: 2vw;
+  gap: 1vw;
 }
 
 div.socials a {
@@ -547,8 +547,8 @@ div.socials a {
 }
 
 div.socials a svg {
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 1.2vw;
+  height: 1.2vw;
   color: #fff;
   fill: #fff;
   position: absolute;
