@@ -181,10 +181,42 @@
             </div>
         </div>
         <div class="fftdraw">
-            <img src="/assets/images/fftdraw.png" alt="">
+            Feel <u>free</u> to draw
         </div>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="position: absolute;">
+            <defs>
+              <filter id="squiggly-0">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
+                <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="2" />
+              </filter>
+              <filter id="squiggly-1">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" />
+              </filter>
+
+              <filter id="squiggly-2">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" />
+              </filter>
+              <filter id="squiggly-3">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" />
+              </filter>
+
+              <filter id="squiggly-4">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4"/>
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" />
+              </filter>
+            </defs> 
+        </svg>
+        
         <div class="welcome-to">
-            <img src="/assets/images/welcome-to.png" alt="">
+            <div>
+                <span>Welcome to the</span>
+                <span>Dreaming in Digital universe</span>
+            </div>
+            <img src="/assets/images/welcome-to-strike.png" alt="">
         </div>
         <div class="socials">
             <a href="">
