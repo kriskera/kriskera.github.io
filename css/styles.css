@@ -353,10 +353,11 @@ green {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("/assets/images/starry-night-sky.jpg");
+    /* background-image: url("/assets/images/starry-night-sky.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
+    background-color: rgba(0, 0, 0, 0.31);
 } 
 
 .section1-container {
@@ -666,6 +667,11 @@ div.socials a svg:hover {
   fill: #fff;
 }
 
+#cv {
+  position: absolute;
+  z-index: -1;
+  opacity: 100%;
+}
 
 /* Section 1 end */
 
@@ -871,7 +877,7 @@ div.socials a svg:hover {
 
 .welcome-to {
   position: absolute;
-  right: 6vw;
+  right: 8vw;
   bottom: 25vw;
   color: #fff;
   font-family: "Cactus Jack";
@@ -884,7 +890,7 @@ div.socials a svg:hover {
 }
 
 .welcome-to div {
-  transform: translateY(-2vw);
+  transform: translateY(-1vw);
 }
 
 .welcome-to div span {
