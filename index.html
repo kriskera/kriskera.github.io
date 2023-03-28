@@ -240,15 +240,92 @@
                 </svg>
             </a>
         </div>
+        <div class="draw">
+          <canvas id="canvas"></canvas>
+          <button id="clear-btn" onclick="Clear()">Clear</button>
+        </div>
         <canvas id="cv"></canvas>
     </section>
 
     <script>
+      //Canvas Draw
+      let canvas = document.getElementById("canvas");
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+let context = canvas.getContext("2d");
+context.fillStyle = "transparent";
+context.fillRect(0, 0, canvas.width, canvas.height);
+let restore_array = [];
+let start_index = -1;
+let stroke_color = 'white';
+let stroke_width = "4";
+let is_drawing = false;
+
+function start(event) {
+  is_drawing = true;
+  context.beginPath();
+  context.moveTo(getX(event), getY(event));
+  event.preventDefault();
+}
+
+function draw(event) {
+  if (is_drawing) {
+    context.lineTo(getX(event), getY(event));
+    context.strokeStyle = stroke_color;
+    context.lineWidth = stroke_width;
+    context.lineCap = "round";
+    context.lineJoin = "round";
+    context.stroke();
+  }
+  event.preventDefault();
+}
+
+function stop(event) {
+  if (is_drawing) {
+    context.stroke();
+    context.closePath();
+    is_drawing = false;
+  }
+  event.preventDefault();
+  restore_array.push(context.getImageData(0, 0, canvas.width, canvas.height));
+  start_index += 1;
+}
+
+function getX(event) {
+  if (event.pageX == undefined) {return event.targetTouches[0].pageX - canvas.offsetLeft}
+  else {return event.pageX - canvas.offsetLeft}
+  }
+
+
+function getY(event) {
+  if (event.pageY == undefined) {return event.targetTouches[0].pageY - canvas.offsetTop}
+  else {return event.pageY - canvas.offsetTop}
+}
+
+canvas.addEventListener("touchstart", start, false);
+canvas.addEventListener("touchmove", draw, false);
+canvas.addEventListener("touchend", stop, false);
+canvas.addEventListener("mousedown", start, false);
+canvas.addEventListener("mousemove", draw, false);
+canvas.addEventListener("mouseup", stop, false);
+canvas.addEventListener("mouseout", stop, false);
+
+function Clear() {
+    context.fillStyle = "white";
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.fillRect(0, 0, canvas.width, canvas.height);
+    restore_array = [];
+    start_index = -1;
+}
+    </script>
+    
+    
+    <script>
 var speed_limit = 0.5     // 2
 var accelerate = true;  // true
 var speed = 0;				  // 0 - initial speed
-var starsize = 4;       // 4
-var stars = 1600;			  // 1600
+var starsize = 6;       // 4
+var stars = 1000;			  // 1600
 var fov = 80;				    // 100 - not actual fov in degrees
 var extraW = 5000;      // 5000
 var extraH = 2400;	    // 2400

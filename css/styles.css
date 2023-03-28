@@ -63,7 +63,7 @@ body {
 .navbar-pc {
   position: absolute;
   width: 100%;
-  z-index: 3;
+  z-index: 5;
   background-color: #b5d555;
 }
 
@@ -207,7 +207,7 @@ body {
   position: fixed;
   width: 100%;
   transition: height 0.7s ease;
-  z-index: 2;
+  z-index: 5;
   margin: 0 0 3em 0;
   backdrop-filter: blur( 15px );
   box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 1px, rgba(0, 0, 0, 0.07) 0px 4px 2px, rgba(0, 0, 0, 0.07) 0px 8px 4px, rgba(0, 0, 0, 0.07) 0px 16px 8px, rgba(0, 0, 0, 0.07) 0px 32px 16px;
@@ -353,6 +353,7 @@ green {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 4;
     /* background-image: url("/assets/images/starry-night-sky.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -362,6 +363,7 @@ green {
 
 .section1-container {
   width: 75%;
+  z-index: 4;
 }
 
 .section1-container-item {
@@ -556,6 +558,7 @@ dark green - color: #00D574;
   line-height: 3vw;
   color: #fff;
   transform: rotate(-10deg);
+  z-index: 4;
 
   -webkit-animation: squiggly-anim 0.6s linear infinite;
   animation: squiggly-anim 0.6s linear infinite;
@@ -608,6 +611,7 @@ dark green - color: #00D574;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 4;
 
   -webkit-animation: squiggly-anim 0.6s linear infinite;
   animation: squiggly-anim 0.6s linear infinite;
@@ -643,6 +647,7 @@ div.socials {
   margin: 0 auto;
   padding: 2vw;
   gap: 1vw;
+  z-index: 4;
 }
 
 div.socials a {
@@ -667,6 +672,30 @@ div.socials a svg:hover {
   fill: #fff;
 }
 
+.draw {
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+}
+
+.draw #canvas {
+  border: 1px solid black; 
+  width: 100vw;
+  height: 98%;
+ }
+ 
+ .stroke-color {
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
+ }
+
+.draw #clear-btn {
+  display: none;
+  position: absolute;
+  color: #fff;
+}
 #cv {
   position: absolute;
   z-index: -1;
