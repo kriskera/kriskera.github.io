@@ -358,12 +358,14 @@ green {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed; */
-    background-color: rgba(0, 0, 0, 0.31);
+    /* background-color: rgba(0, 0, 0, 0.31); */
 } 
 
 .section1-container {
   width: 75%;
   z-index: 4;
+  background: transparent;
+  pointer-events: none;
 }
 
 .section1-container-item {
@@ -371,6 +373,7 @@ green {
   position: relative;
   width: 66.5%;
   margin: 0 auto;
+  background: transparent;
 }
 
 .section1-container-item .s1ci-tb {
@@ -380,6 +383,7 @@ green {
   color: #fff;
   font-size: 10vw;
   font-weight: 600;
+  background: transparent;
 }
 
 .section1-container-item .s1ci-tb svg {
@@ -674,7 +678,7 @@ div.socials a svg:hover {
 
 .draw {
   position: absolute;
-  z-index: 4;
+  z-index: 3;
   width: 100%;
   height: 100%;
 }
@@ -860,6 +864,10 @@ div.socials a svg:hover {
   margin-right: 13vw;
 }
 
+.bit-color-shift .bit-letter{
+  animation: color-animation 6s linear infinite;
+}
+
 .draw-text {
   font-size: 2vw;
   position: absolute;
@@ -868,13 +876,13 @@ div.socials a svg:hover {
 }
 
 .fftdraw {
-  width: 30%;
+  width: 25%;
   position: absolute;
   top: 12%;
   left: 5vw;
   text-align: center;
   font-family: "Cactus Jack";
-  font-size: 8vw ;
+  font-size: 6.5vw ;
   line-height: 6vw;
   color: #fff;
   transform: rotate(-10deg);
@@ -931,12 +939,12 @@ div.socials a svg:hover {
   font-size: 5vw;
 }
 .welcome-to div span:nth-child(2) {
-  font-size: 4vw;
+  font-size: 3.2vw;
 }
 
 .welcome-to img {
   position: absolute;
-  width: 52vw;
+  width: 43vw;
 }
 
 div.socials {
