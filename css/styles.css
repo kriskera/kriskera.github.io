@@ -563,6 +563,7 @@ dark green - color: #00D574;
   color: #fff;
   transform: rotate(-10deg);
   z-index: 4;
+  pointer-events: none;
 
   -webkit-animation: squiggly-anim 0.6s linear infinite;
   animation: squiggly-anim 0.6s linear infinite;
@@ -616,6 +617,7 @@ dark green - color: #00D574;
   align-items: center;
   justify-content: center;
   z-index: 4;
+  pointer-events: none;
 
   -webkit-animation: squiggly-anim 0.6s linear infinite;
   animation: squiggly-anim 0.6s linear infinite;

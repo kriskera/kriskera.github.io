@@ -311,12 +311,18 @@ canvas.addEventListener("mouseup", stop, false);
 canvas.addEventListener("mouseout", stop, false);
 
 function Clear() {
-    context.fillStyle = "white";
+    context.fillStyle = "transparent";
     context.clearRect(0, 0, canvas.width, canvas.height);
     context.fillRect(0, 0, canvas.width, canvas.height);
     restore_array = [];
     start_index = -1;
 }
+
+document.addEventListener('keydown', function(event) {
+  if (event.ctrlKey && event.key === 'z') {
+    Clear();
+  }
+});
     </script>
     
     
