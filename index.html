@@ -310,6 +310,19 @@ canvas.addEventListener("mousemove", draw, false);
 canvas.addEventListener("mouseup", stop, false);
 canvas.addEventListener("mouseout", stop, false);
 
+
+function Restore() {
+  if (start_index <= 0) {
+    Clear()
+  } else {
+    start_index += -1;
+    restore_array.pop();
+    if ( event.type != 'mouseout' ) {
+      context.putImageData(restore_array[start_index], 0, 0);
+    }
+  }
+}
+
 function Clear() {
     context.fillStyle = "transparent";
     context.clearRect(0, 0, canvas.width, canvas.height);
@@ -320,7 +333,7 @@ function Clear() {
 
 document.addEventListener('keydown', function(event) {
   if (event.ctrlKey && event.key === 'z') {
-    Clear();
+    Restore();
   }
 });
     </script>
