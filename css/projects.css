@@ -360,7 +360,7 @@ green {
   color: #fff;
   display: flex;
   align-items: baseline;
-  gap: 0.05em;
+  gap: 0.06em;
 }
 
 .projects-heading {
@@ -661,7 +661,7 @@ div.socials a svg:hover {
     }  
 
     .section1-container {
-      width: 99%;
+      width: 100%;
       margin: 0 auto;
     }
 
@@ -674,6 +674,24 @@ div.socials a svg:hover {
       color: #fff;
       display: flex;
       align-items: baseline;
+    }
+
+    .pacman-container {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 49%;
+      top: 19%;
+      transform: rotate(0deg);
+    }
+
+    .projects-heading .projects-content {
+      width: 48%;
+      font-size: 1.2vw;
+      display: flex;
+      justify-content: right;
+      text-align: right;
+      text-justify: auto;
     }
 
 
