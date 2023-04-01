@@ -678,6 +678,13 @@ div.socials a svg:hover {
       width: 45%;
       border-radius: 3vw;
     }
+    
+    .team-container-item h2 {
+      font-size: 4vw;
+      line-height: 4vw;
+      padding: 3vw 0 2vw 0;
+    }
+    
 
     .team-heading {
       margin: 8vw 0;
