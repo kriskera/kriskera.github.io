@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreaming in Digital</title>
+    <link rel="stylesheet" href="/css/connect.css">
+    <link rel="icon" href="/assets/images/favicon.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Fonts end -->
+</head>
+<body>
+    <div class="navbar-pc">
+        <div class="navbar-pc-container">
+            <img class="logo" src="/assets/images/did-logo-black.png" alt="">
+            <ul>
+                <li>
+                    <a href="/index.html" class="link">
+                        <span class="mask">
+                          <div class="link-container">
+                            <span class="link-title1 title">HOME</span>
+                            <span class="link-title2 title">HOME</span>
+                          </div>
+                        </span>
+                      </a>
+                </li>
+                <li>
+                    <a href="/projects.html" class="link">
+                        <span class="mask">
+                          <div class="link-container">
+                            <span class="link-title1 title">PROJECTS</span>
+                            <span class="link-title2 title">PROJECTS</span>
+                          </div>
+                        </span>
+                      </a>
+                </li>
+                <li>
+                    <a href="/team.html" class="link">
+                        <span class="mask">
+                          <div class="link-container">
+                            <span class="link-title1 title">TEAM</span>
+                            <span class="link-title2 title">TEAM</span>
+                          </div>
+                        </span>
+                      </a>
+                </li>
+                <li>
+                    <a href="/connect.html" class="link">
+                        <span class="mask">
+                          <div class="link-container">
+                            <span class="link-title1 title">CONNECT</span>
+                            <span class="link-title2 title">CONNECT</span>
+                          </div>
+                        </span>
+                      </a>
+                </li>
+            </ul>
+            <img class="zzz" src="/assets/images/zzz.png" alt="">
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="navbar-container">
+            <a href="/index.html" class="logo-link"><img class="logo" src="/assets/images/did-logo.png" alt=""></a>
+            <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+              <svg viewBox="0 0 100 100" class="" onclick="myFunction()">
+                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="line line2" d="M 20,50 H 80" />
+                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+              </svg>
+            </button>
+        </div>
+        <div class="nav-menu" id="nav-menu" style="height: 0px;visibility: hidden;opacity: 0;">
+            <ul>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/projects.html">PROJECTS</a></li>
+                <li><a href="/team.html">TEAM</a></li>
+                <li><a href="/connect.html">CONNECT</a></li>
+            </ul>
+            <div class="nav-menu-bar">
+                <div>
+                    <span>SOCIALS</span>
+                    <ul>
+                        <li><a href="">INSTAGRAM</a></li>
+                        <li><a href="">TWITTER</a></li>
+                        <li><a href="">YOUTUBE</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <span>GET IN TOUCH</span>
+                    <a href="">DREAMINGINDIGITAL@GMAIL.COM</a>
+                </div>
+                <div class="copyright">
+                    <span>©DREAMINGINDIGITAL</span>
+                    <span>ALL RIGHTS RESERVED</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="section1">
+        <!-- <h1>Dreaming<br> in Digital</h1> -->
+        <div class="section1-container">
+          <div class="connect-heading">
+            <div class="h1">
+              <span>Le<span style="font-family: minecraft;">t's</span></span>
+              <h1 style="font-family: minecraft;">Connect</h1>
+            </div>
+            <div class="established">
+              <div class="bit-color-shift">
+                Established in <span class="bit-letter bit-letter-1">2</span><span class="bit-letter bit-letter-2">0</span><span class="bit-letter bit-letter-3">2</span><span class="bit-letter bit-letter-4">2</span>
+              </div>
+            </div>
+          </div>
+          <div class="form">
+            <form action="/action_page.php">
+              <label for="fname">First name</label><br>
+              <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+              <label for="fname">Email</label><br>
+              <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+              <label for="cars">Queries</label><br>
+              <select id="cars" name="cars">
+                <option value="none" selected disabled hidden>Choose an option</option>
+                <option value="volvo">Volvo XC90</option>
+                <option value="saab">Saab 95</option>
+                <option value="mercedes">Mercedes SLK</option>
+                <option value="audi">Audi TT</option>
+              </select><br>
+              <label for="fname">Message</label><br>
+              <textarea rows="4" cols="50" name="comment" form="usrform"></textarea>
+              <input class="submit-btn" type="submit" value="Send">
+            </form> 
+          </div>
+        </div>
+    </section>
+
+    <div class="socials">
+      <img src="/assets/images/projects/check-our-socials.png" alt="">
+      <a href="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </svg>
+      </a>
+      <a href="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-youtube" viewBox="0 0 16 16">
+              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+          </svg>
+      </a>
+      <a href="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-pinterest" viewBox="0 0 16 16">
+              <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/>
+          </svg>
+      </a>
+      <a href="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-twitter" viewBox="0 0 16 16">
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+          </svg>
+      </a>
+    </div>
+    <canvas id="cv"></canvas>
+
+    <script>
+      //Canvas Draw
+      let canvas = document.getElementById("canvas");
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+let context = canvas.getContext("2d");
+context.fillStyle = "transparent";
+context.fillRect(0, 0, canvas.width, canvas.height);
+let restore_array = [];
+let start_index = -1;
+let stroke_color = '#BADA55';
+let stroke_width = "4";
+let is_drawing = false;
+
+function start(event) {
+  is_drawing = true;
+  context.beginPath();
+  context.moveTo(getX(event), getY(event));
+  event.preventDefault();
+}
+
+function draw(event) {
+  if (is_drawing) {
+    context.lineTo(getX(event), getY(event));
+    context.strokeStyle = stroke_color;
+    context.lineWidth = stroke_width;
+    context.lineCap = "round";
+    context.lineJoin = "round";
+    context.stroke();
+  }
+  event.preventDefault();
+}
+
+function stop(event) {
+  if (is_drawing) {
+    context.stroke();
+    context.closePath();
+    is_drawing = false;
+  }
+  event.preventDefault();
+  restore_array.push(context.getImageData(0, 0, canvas.width, canvas.height));
+  start_index += 1;
+}
+
+function getX(event) {
+  if (event.pageX == undefined) {return event.targetTouches[0].pageX - canvas.offsetLeft}
+  else {return event.pageX - canvas.offsetLeft}
+  }
+
+
+function getY(event) {
+  if (event.pageY == undefined) {return event.targetTouches[0].pageY - canvas.offsetTop}
+  else {return event.pageY - canvas.offsetTop}
+}
+
+canvas.addEventListener("touchstart", start, false);
+canvas.addEventListener("touchmove", draw, false);
+canvas.addEventListener("touchend", stop, false);
+canvas.addEventListener("mousedown", start, false);
+canvas.addEventListener("mousemove", draw, false);
+canvas.addEventListener("mouseup", stop, false);
+canvas.addEventListener("mouseout", stop, false);
+
+
+function Restore() {
+  if (start_index <= 0) {
+    Clear()
+  } else {
+    start_index += -1;
+    restore_array.pop();
+    if ( event.type != 'mouseout' ) {
+      context.putImageData(restore_array[start_index], 0, 0);
+    }
+  }
+}
+
+function Clear() {
+    context.fillStyle = "transparent";
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.fillRect(0, 0, canvas.width, canvas.height);
+    restore_array = [];
+    start_index = -1;
+}
+
+document.addEventListener('keydown', function(event) {
+  if (event.ctrlKey && event.key === 'z' || event.metaKey && event.key === 'z') {
+    Restore();
+  }
+});
+    </script>
+    
+    
+    <script>
+var speed_limit = 0.4     // 2
+var accelerate = true;  // true
+var speed = 0;				  // 0 - initial speed
+var starsize = 7;       // 4
+var stars = 300;			  // 1600
+var fov = 80;				    // 100 - not actual fov in degrees
+var extraW = 5000;      // 5000
+var extraH = 2400;	    // 2400
+
+var canv = document.getElementById('cv');
+document.querySelector('body').onresize = resizeCanv;
+canv.onclick = init;
+const ctx = canv.getContext('2d');
+const minZ = -fov + 2;
+
+// Precalculating so there are less calculations between frames
+var extraW_half = extraW / 2;
+var extraH_half = extraH / 2;
+const TWOPI = Math.PI * 2;
+var xMin, xMax, yMin, yMax;
+var initScaleX, initScaleY;
+var vel;
+var points;
+
+function init() {
+	resizeCanv();
+	points = randomPoints();
+	vel = speed;
+}
+
+function resizeCanv() {
+	canv.width = window.innerWidth;
+	canv.height = window.innerHeight;
+	xMax = canv.width / 2;
+	xMin = -xMax;
+	yMax = canv.height / 2;
+	yMin = -yMax;
+	initScaleX = canv.width + extraW;
+	initScaleY = canv.height + extraH;
+}
+
+function randomPoints() {
+	let arr = [];
+	for (let i = 0; i < stars; i++){
+		arr.push({
+			x: Math.random() * initScaleX - (xMax + extraW_half),
+			y: Math.random() * initScaleY - (yMax + extraH_half),
+			z: Math.random() * 1000 + 140,
+			prevz: this.z,
+			size: starsize
+		});
+	}
+	return arr;
+}
+
+function project(items, alterScale = true){
+	if (alterScale) alterScale = -0.4;
+	else alterScale = 0;
+	let projected = [];
+	items.forEach(item => {
+		let scale = fov / (fov + item.z);
+		let prevscale = fov / (fov + item.prevz);
+		projected.push({
+			x: item.x * scale,
+			y: item.y * scale,
+			z: item.z,
+			prevx: item.x * prevscale,
+			prevy: item.y * prevscale,
+			size: item.size * scale + alterScale
+		});
+	});
+	return projected;
+}
+
+function inView(item) {
+	if (item.x + item.size > xMin
+	&& item.x < xMax
+	&& item.y + item.size > yMin
+	&& item.y < yMax
+	&& item.z < 500) {
+		return true;
+	}
+	return false;
+}
+
+function drawLines(items) {
+	items.forEach(item => {
+		if (inView(item)){
+			ctx.lineWidth = item.size;
+			ctx.beginPath();
+			ctx.moveTo(item.x, item.y);
+			ctx.lineTo(item.prevx, item.prevy);
+			ctx.stroke();
+			ctx.closePath();
+		}
+	});
+}
+
+function drawRects(items) {
+	items.forEach(item => {
+		if (inView(item))
+			ctx.fillRect(item.x, item.y, item.size, item.size);
+	});
+}
+
+function drawCircles(items) {
+	items.forEach(item => {
+		if (inView(item)) {
+			ctx.beginPath();
+			ctx.arc(item.x, item.y, item.size, 0, TWOPI);
+			ctx.fill();
+			ctx.closePath();
+		}
+	});
+}
+
+function drawText(items, text) {
+	items.forEach(item => {
+		if (inView(item)){
+			ctx.font = Math.round(item.size * 6) + "px sans-serif";
+			ctx.fillText(text, item.x, item.y);
+		}
+	});
+}
+
+function animate() {
+	ctx.save();
+	ctx.fillStyle = 'rgb(0,0,0)';
+	ctx.fillRect(0, 0, canv.width, canv.height);
+	ctx.translate(xMax, yMax);
+	ctx.fillStyle = 'rgb(255,255,255)';
+	points.forEach(item => {
+		if (item.z > minZ) {
+			item.prevz = item.z;
+			item.z -= vel;
+		}
+		else {
+			item.z = item.prevz = Math.random() * 600 + 600;
+			item.x = Math.random() * initScaleX - (xMax + extraW_half);
+			item.y = Math.random() * initScaleY - (yMax + extraH_half);
+		}
+	});
+
+	ctx.strokeStyle = 'rgb(255,255,255)';
+	drawLines(project(points));
+	//drawRects(project(points));
+	//drawCircles(project(points));
+	//drawText(project(points), "♥️");
+	
+	ctx.restore();
+
+	window.requestAnimationFrame(animate);
+
+	if (accelerate) {
+		if (vel < speed_limit) vel += 0.08;
+	}
+}
+
+init();
+animate();
+//setInterval(animate,1000/60);
+
+// I know this is overcomplicated, especially
+// for something that isn't even interactive. Forgive me.
+    </script>    
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+    <script src="/js/cursor.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
