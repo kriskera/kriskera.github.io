@@ -885,7 +885,6 @@ div.socials a svg:hover {
 }
 
 .fftdraw {
-  width: 25%;
   position: absolute;
   top: 12%;
   left: 5vw;
@@ -900,30 +899,13 @@ div.socials a svg:hover {
   animation: squiggly-anim 0.6s linear infinite;
 }
 
-.fftdraw u {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-  padding: 0.3vw 0;
-  border-bottom: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 76%, rgba(255,255,255,0) 99%) 5px solid;
-}
-
-.fftdraw u::after {
-  content: "";
-  /*display: block; not needed when position:absolute used in this case*/
-  position: absolute;
-  background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 46%, rgba(0,0,0,0) 88%, rgba(255,255,255,0) 100%);
-  height: 0.6vw;
-  bottom: -1vw;
-  left: 0vw;/* match width of text and padding*/
-  right: 0;/* match width of text and padding*/
-  width: 100%;
+.fftdraw img {
+  width: 30vw;
 }
 
 .welcome-to {
   position: absolute;
-  right: 8vw;
+  right: 20vw;
   bottom: 25vw;
   color: #fff;
   font-family: "Cactus Jack";
@@ -934,6 +916,8 @@ div.socials a svg:hover {
   -webkit-animation: squiggly-anim 0.6s linear infinite;
   animation: squiggly-anim 0.6s linear infinite;
 }
+
+
 
 .welcome-to div {
   transform: translateY(-1vw);
@@ -953,7 +937,7 @@ div.socials a svg:hover {
 
 .welcome-to img {
   position: absolute;
-  width: 43vw;
+  width: 35vw;
 }
 
 div.socials {
