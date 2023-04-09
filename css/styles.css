@@ -16,6 +16,10 @@ a {
 
 html {
   height: 100%;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  overflow: hidden;
+
 }
 
 body {
@@ -386,34 +390,32 @@ green {
   background: transparent;
 }
 
-.section1-container-item .s1ci-tb svg {
+.section1-container-item .s1ci-tb img {
   width: 2.5vw;
   align-self: center;
-  margin-top: 2.8vw;
+  margin-top: 3vw;
+
+  transform: translateY(20%);
+  animation: floater 2s infinite;
+  transition: ease 2s;
+}
+
+@keyframes floater {
+  0%{transform: translateY(20%);transition: ease 1s;}
+  50%{transform: translateY(-20%);transition: ease 1s;}
 }
 
 .section1-container-item .s1ci-tb .text {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  height: 12vw;
+  height: 11.7vw;
 }
 
 .section1-container-item .s1ci-tb .text div {
   display: flex;
   align-items: baseline;
 }
-
-/* 
-red- color: #FF2C49;
-orange - color: #FF6D46;
-yellow - color: #FFE751;
-green - color: #2FF630;
-blue - color: #00AAF8;
-purple - color: #7D5EF7;
-dark green - color: #00D574;
- */
-
 
 .bit-color-shift:hover .bit-letter{
   animation: color-animation 6s linear infinite;
@@ -552,10 +554,9 @@ dark green - color: #00D574;
 }
 
 .fftdraw {
-  width: 12vw;
   position: absolute;
-  top: 5vw;
-  left: 3vw;
+  top: 1vw;
+  left: 1.5vw;
   text-align: center;
   font-family: "Cactus Jack";
   font-size: 3.1vw ;
@@ -565,8 +566,12 @@ dark green - color: #00D574;
   z-index: 4;
   pointer-events: none;
 
-  -webkit-animation: squiggly-anim 0.6s linear infinite;
-  animation: squiggly-anim 0.6s linear infinite;
+  /* -webkit-animation: squiggly-anim 0.6s linear infinite;
+  animation: squiggly-anim 0.6s linear infinite; */
+}
+
+.fftdraw img {
+  width: 15vw;
 }
 
 .fftdraw u {
@@ -609,8 +614,8 @@ dark green - color: #00D574;
 
 .welcome-to {
   position: absolute;
-  right: 4vw;
-  bottom: 4.5vw;
+  right: 10vw;
+  bottom: 6vw;
   color: #fff;
   font-family: "Cactus Jack";
   display: flex;
@@ -619,8 +624,8 @@ dark green - color: #00D574;
   z-index: 4;
   pointer-events: none;
 
-  -webkit-animation: squiggly-anim 0.6s linear infinite;
-  animation: squiggly-anim 0.6s linear infinite;
+  /* -webkit-animation: squiggly-anim 0.6s linear infinite;
+  animation: squiggly-anim 0.6s linear infinite; */
 }
 
 .welcome-to div {
@@ -654,12 +659,14 @@ div.socials {
   padding: 2vw;
   gap: 1vw;
   z-index: 4;
+  pointer-events: none;
 }
 
 div.socials a {
   color: #fff;
   position: relative;
   margin: 0.7vw;
+  pointer-events: all;
 }
 
 div.socials a svg {
@@ -688,7 +695,7 @@ div.socials a svg:hover {
 .draw #canvas {
   border: 1px solid black; 
   width: 100vw;
-  height: 98%;
+  height: 100%;
  }
  
  .stroke-color {
