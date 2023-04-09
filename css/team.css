@@ -435,14 +435,14 @@ green {
 }
 
 .team-container-item:hover img {
-  scale: 1.09;
-  transform: rotate(-5deg);
+  scale: 1.05;
+  transform: rotate(-1deg);
 }
 
 .team-container-item img {
   width: 100%;
   height: auto;
-  transition: all 0.3s ease;
+  transition: all 0.7s ease;
 }
 
 .team-container-item h2 {

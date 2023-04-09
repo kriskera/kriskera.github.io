@@ -26,6 +26,12 @@ body {
 @font-face {
   font-family: minecraft;
   src: url("/assets/fonts/Minecraft.ttf");
+  
+}
+
+.minecraft {
+  font-family: minecraft, Poppins, Helvetica, sans-serif;
+  letter-spacing: 0.2vw;
 }
 
 @font-face {
@@ -360,8 +366,9 @@ green {
   color: #fff;
   display: flex;
   align-items: baseline;
-  gap: 0.06em;
+  gap: 0.3vw;
 }
+
 
 .projects-heading {
   width: 100%;
