@@ -240,12 +240,6 @@ body {
 .logo {
   align-self: center;
   width: 4vw;
-  
-  transition: all 0.2s ease;
-}
-
-.logo:hover {
-  filter: drop-shadow(3.6vw 0 0 #fff);
 }
 
 .navbar-container div span {
@@ -417,7 +411,7 @@ green {
   align-items: baseline;
 }
 
-.bit-color-shift:hover .bit-letter{
+.bit-color-shift .bit-letter{
   animation: color-animation 6s linear infinite;
 }
 
