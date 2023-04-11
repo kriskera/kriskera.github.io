@@ -497,18 +497,19 @@ div.socials {
   height: 12vw;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   margin: 0 auto;
-  padding: 2vw;
+  padding: 4vw;
   gap: 1vw;
   z-index: 4;
 }
 
 div.socials img {
   position: absolute;
-  width: 20vw;
+  width: 18vw;
   height: auto;
-  left: 25%;
+  right: 5%;
+  transform: translateY(30%);
 }
 
 div.socials a {

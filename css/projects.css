@@ -513,11 +513,20 @@ div.socials {
   z-index: 4;
 }
 
-div.socials img {
+.checkout-arrow {
+  display: flex;
+  align-items: center;
   position: absolute;
-  width: 20vw;
+  left: 20%;
+}
+
+.checkout-arrow img {
+  width: 15vw;
+}
+
+.checkout-arrow img:nth-child(2) {
+  width: 11vw;
   height: auto;
-  left: 25%;
 }
 
 div.socials a {
