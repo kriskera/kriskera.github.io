@@ -16,7 +16,7 @@ a {
 
 ::selection {
   color: #000000;
-  background: yellow;
+  background: #b5d555;
 }
 
 html {
@@ -36,7 +36,6 @@ body {
 
 .minecraft {
   font-family: minecraft, Poppins, Helvetica, sans-serif;
-  letter-spacing: 0.2vw;
 }
 
 @font-face {
@@ -371,9 +370,8 @@ green {
   color: #fff;
   display: flex;
   align-items: baseline;
-  gap: 0.3vw;
+  letter-spacing:  0.3vw;
 }
-
 
 .projects-heading {
   width: 100%;

@@ -4,12 +4,6 @@
     box-sizing: border-box;
 }
 
-
-@font-face {
-    font-family: MonumentExtended;
-    src: url('/assets/fonts/Monument-Extended/MonumentExtended-Regular.otf');
-  }
-
 :root {
   --red: #FF2C49;
   --green: #2FF630;
@@ -23,7 +17,7 @@ a {
 
 ::selection {
   color: #000000;
-  background: yellow;
+  background: #b5d555;
 }
 
 html {
@@ -37,11 +31,6 @@ body {
 @font-face {
   font-family: minecraft;
   src: url("/assets/fonts/Minecraft.ttf");
-}
-
-@font-face {
-  font-family: "Cactus Jack";
-  src: url("/assets/fonts/Cactus\ Jack.ttf");
 }
 
 /* Cursor */
