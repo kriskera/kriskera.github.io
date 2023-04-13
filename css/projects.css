@@ -14,6 +14,11 @@ a {
   text-decoration: none;
 }
 
+::selection {
+  color: #000000;
+  background: yellow;
+}
+
 html {
   height: 100%;
 }
