@@ -12,6 +12,7 @@ function myFunction() {
     x.style.visibility = "hidden";
     x.style.opacity = "0";
     x.style.height = "0";
+    x.style.width = "0";
     y.style.height = "auto";
   }
 }
