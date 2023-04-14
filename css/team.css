@@ -280,10 +280,10 @@ div.socials a svg:hover {
 
     div.socials img {
       position: absolute;
-      width: 40vw;
+      width: 30vw;
       height: auto;
-      left: 5%;
-      transform: translateY(-7vw);
+      left: 35%;
+      transform: translateY(4vw);
     }
 
   div.socials a {
