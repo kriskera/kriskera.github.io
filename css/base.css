@@ -374,7 +374,7 @@ green {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  scale: 1.3;
+  scale: 1;
 }
 
 .c-loader__title {
@@ -387,7 +387,7 @@ green {
   width: 100%;
 }
 .is--started .c-loader__title {
-  animation: loaderTitle 3s ease forwards;
+  animation: loaderTitle 2.5s ease forwards;
 }
 
 .c-loader__state {
@@ -397,14 +397,14 @@ green {
 }
 
 .is--started .c-loader__state--progress {
-  animation: loaderStateProgress 2s step-end forwards;
+  animation: loaderStateProgress 1.7s step-end forwards;
 }
 
 .c-loader__state--complete {
   opacity: 0;
 }
 .is--started .c-loader__state--complete {
-  animation: loaderStateComplete 2s step-end forwards;
+  animation: loaderStateComplete 1.7s step-end forwards;
 }
 
 .c-loader__dots {
@@ -432,7 +432,7 @@ green {
   transform-origin: left center;
 }
 .is--started .c-loader__progress {
-  animation: loader 2s ease forwards;
+  animation: loader 1.7s ease forwards;
 }
 
 .c-loader__progress-helper {
@@ -458,7 +458,7 @@ green {
   top: 9px;
 }
 .is--started .c-loader__progress-helper--right {
-  animation: loaderHelperRight 5s step-end forwards;
+  animation: loaderHelperRight 4s step-end forwards;
 }
 
 @keyframes loaderTitle {
