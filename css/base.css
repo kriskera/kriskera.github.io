@@ -355,7 +355,7 @@ green {
 
   animation-name: mymove;
   animation-duration: 1.5s;
-  animation-delay: 4s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
 }
 
@@ -386,7 +386,7 @@ green {
   width: 100%;
 }
 .is--started .c-loader__title {
-  animation: loaderTitle 4s ease forwards;
+  animation: loaderTitle 3s ease forwards;
 }
 
 .c-loader__state {
@@ -396,14 +396,14 @@ green {
 }
 
 .is--started .c-loader__state--progress {
-  animation: loaderStateProgress 4s step-end forwards;
+  animation: loaderStateProgress 2s step-end forwards;
 }
 
 .c-loader__state--complete {
   opacity: 0;
 }
 .is--started .c-loader__state--complete {
-  animation: loaderStateComplete 4s step-end forwards;
+  animation: loaderStateComplete 2s step-end forwards;
 }
 
 .c-loader__dots {
@@ -431,7 +431,7 @@ green {
   transform-origin: left center;
 }
 .is--started .c-loader__progress {
-  animation: loader 5s ease forwards;
+  animation: loader 2s ease forwards;
 }
 
 .c-loader__progress-helper {
