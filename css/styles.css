@@ -455,18 +455,12 @@ div.socials div a svg:hover {
 
 .fftdraw {
   position: absolute;
-  top: 12%;
-  left: 5vw;
-  text-align: center;
-  font-family: "Cactus Jack";
-  font-size: 6.5vw ;
-  line-height: 6vw;
-  color: #fff;
+  top: 5%;
   transform: rotate(-10deg);
 }
 
 .fftdraw img {
-  width: 30vw;
+  width: 40vw;
 }
 
 .welcome-to {
