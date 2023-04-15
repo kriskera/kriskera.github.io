@@ -227,7 +227,7 @@ div.socials a svg:hover {
     }
 
     .connect-heading {
-      padding: 8vw 0;
+      padding: 8vw 0 6vw 0;
     }
 
     .connect-heading .h1 span, h1 {
@@ -243,7 +243,7 @@ div.socials a svg:hover {
     
     .form form label {
       font-size: 0.8em;
-      margin: 1vw 0;
+      margin: 0;
     }
     
     .form form input, .form form select, .form form textarea {
@@ -256,6 +256,7 @@ div.socials a svg:hover {
 
     input:focus-visible, textarea:focus-visible {
       border-radius: 2vw;
+      border: 2px solid white;
     }
 
     .form .cloud {
