@@ -197,8 +197,7 @@ div.socials a svg:hover {
 /* Section 1 end */
 
 /* Media Queries */
-@media (max-width: 767.98px) { 
-   
+@media (max-width: 767.98px) {    
     .section1 {
       padding: 20vw 0 0 0;
     }  
@@ -225,8 +224,8 @@ div.socials a svg:hover {
     }
     
     .team-container-item h2 {
-      font-size: 4vw;
-      line-height: 4vw;
+      font-size: 5.5vw;
+      line-height: 6vw;
       padding: 3vw 0 2vw 0;
     }
     
@@ -244,7 +243,7 @@ div.socials a svg:hover {
     }
     
     .team-heading .h1 h1, .team-heading .h1 span {
-      font-size: 14vw;
+      font-size: 18vw;
       font-weight: 700;
       color: #fff;
       display: flex;
@@ -252,58 +251,53 @@ div.socials a svg:hover {
     } 
 
     .team-heading .team-content {
-      width: 72%;
-      font-size: 2vw;
+      width: 90%;
+      font-size: 3vw;
       display: flex;
-      margin: 0 auto;
+      margin: 1.5em auto 0 auto;
       text-justify: auto;
     }
     
     .team-heading .h2 h2{
-      font-size: 14vw;
+      margin: 0.5em 0 0 0;
+      font-size: 20vw;
       display: inline-block;
     }
 
     .team-container p {
-      font-size: 3vw;
+      font-size: 4vw;
       width: 90%;
-      margin: 0 auto;
+      margin: 2em auto;
     }
     
     div.socials {
       height: 10vw;
       bottom: 8vw;
       margin: 0 auto;
-      padding: 20vw;
+      padding: 40vw 0vw 15vw 0;
       gap: 8vw;
     }
 
     div.socials img {
       position: absolute;
-      width: 30vw;
+      width: 45vw;
       height: auto;
-      left: 35%;
-      transform: translateY(4vw);
+      left: 30%;
+      transform: translateY(1vw);
     }
 
-  div.socials a {
-    position: relative;
-    margin: 0.7vw;
-  }
-  
-  div.socials a svg {
-    width: 5vw;
-    height: 5vw;
-    fill: #fff;
-    position: absolute;
-    transition: all 0.3s ease;
-  }
-  div.socials a svg:hover {
-    /* width: 2.6vw;
-    height: 2.6vw; */
-    transform: scale(1.4);
-    fill: #fff;
-  }
+    div.socials a {
+      position: relative;
+      margin: 0.7vw;
+    }
+
+    div.socials a svg {
+      width: 5vw;
+      height: 5vw;
+      fill: #fff;
+      position: absolute;
+      transition: all 0.3s ease;
+    }
 
     /* Section 1 end */
 }

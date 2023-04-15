@@ -19,7 +19,7 @@ html, body {
   width: 70%;
   padding: 6vw 0;
   z-index: 4;
-  color: #fff;
+  color: rgb(223, 223, 223);
   font-size: 1vw;
   font-weight: 300;
 }
@@ -27,6 +27,7 @@ html, body {
 .section1-container span b {
   font-weight: 700;
   font-size: 1.1vw;
+  color: #fff;
 }
 
 .section1-container h1 {
