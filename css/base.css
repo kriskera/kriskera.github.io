@@ -725,11 +725,11 @@ div.socials div a svg:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
-  .nav-menu-bar .copyright span {
+  .nav-menu-bar .copyright span, .nav-menu-bar .copyright span a {
     font-size: 2.5vw;
-    display: inline;
   }
 
   

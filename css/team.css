@@ -270,6 +270,14 @@ div.socials a svg:hover {
       font-size: 4vw;
       width: 90%;
     }
+
+    .wtjot-img {
+      position: absolute;
+      width: 60vw;
+      height: auto;
+      left: 22%;
+      transform: translateY(-20vw);
+    }
     
     div.socials {
       height: 10vw;
@@ -279,13 +287,7 @@ div.socials a svg:hover {
       gap: 8vw;
     }
 
-    div.socials img {
-      position: absolute;
-      width: 50vw;
-      height: auto;
-      left: 27%;
-      transform: translateY(1vw);
-    }
+
 
     div.socials a {
       position: relative;
