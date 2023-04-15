@@ -273,15 +273,15 @@ div.socials a svg:hover {
       height: 10vw;
       bottom: 8vw;
       margin: 1.5em auto;
-      padding: 40vw 0vw 15vw 0;
+      padding: 40vw 0vw 10vw 0;
       gap: 8vw;
     }
 
     div.socials img {
       position: absolute;
-      width: 45vw;
+      width: 50vw;
       height: auto;
-      left: 30%;
+      left: 27%;
       transform: translateY(1vw);
     }
 
