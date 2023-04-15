@@ -272,7 +272,7 @@ div.socials a svg:hover {
     div.socials {
       height: 10vw;
       bottom: 8vw;
-      margin: 0 auto;
+      margin: 1.5em auto;
       padding: 40vw 0vw 15vw 0;
       gap: 8vw;
     }
