@@ -159,46 +159,6 @@ input:focus-visible, textarea:focus-visible {
   left: -5vw;
 }
 
-div.socials {
-  display: block;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  padding: 3vw;
-  gap: 1vw;
-  z-index: 4;
-}
-
-div.socials img {
-  position: absolute;
-  width: 20vw;
-  height: auto;
-  left: 25%;
-}
-
-div.socials a {
-  color: #fff;
-  position: relative;
-  margin: 0.7vw;
-}
-
-div.socials a svg {
-  width: 1.5vw;
-  height: 1.5vw;
-  color: #fff;
-  fill: #fff;
-  position: absolute;
-  transition: all 0.3s ease;
-}
-div.socials a svg:hover {
-  /* width: 2.6vw;
-  height: 2.6vw; */
-  transform: scale(1.4);
-  color: #fff;
-  fill: #fff;
-}
-
 #cv {
   position: fixed;
   top:0;

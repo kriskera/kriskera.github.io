@@ -9,6 +9,7 @@
 } 
 
 .section1-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -145,6 +146,14 @@
   text-align: justify;
 }
 
+
+.wtjot-img {
+  position: absolute;
+  width: 18vw;
+  right: 2vw;
+  bottom: -30%;
+}
+
 div.socials {
   display: block;
   height: 12vw;
@@ -157,13 +166,6 @@ div.socials {
   z-index: 4;
 }
 
-div.socials img {
-  position: absolute;
-  width: 18vw;
-  height: auto;
-  right: 5%;
-  transform: translateY(30%);
-}
 
 div.socials a {
   color: #fff;
