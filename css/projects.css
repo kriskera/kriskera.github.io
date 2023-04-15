@@ -180,21 +180,47 @@ div.socials {
   height: auto;
 }
 
-div.socials a {
-  color: #fff;
-  position: relative;
-  margin: 0.7vw;
+div.socials {
+  width: 100%;
+  display: block;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1vw;
+  gap: 1vw;
+  z-index: 4;
+  pointer-events: none;
 }
 
-div.socials a svg {
-  width: 1.5vw;
-  height: 1.5vw;
+div.socials>*{
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7vw;
+}
+
+div.socials div:nth-child(1){
+  justify-content: left;
+}
+
+div.socials div a {
+  color: #fff;
+  position: relative;
+  margin: 1vw;
+  pointer-events: all;
+}
+
+div.socials div a svg {
+  width: 1.2vw;
+  height: 1.2vw;
   color: #fff;
   fill: #fff;
   position: absolute;
   transition: all 0.3s ease;
 }
-div.socials a svg:hover {
+div.socials div a svg:hover {
   /* width: 2.6vw;
   height: 2.6vw; */
   transform: scale(1.4);
@@ -207,7 +233,6 @@ div.socials a svg:hover {
   top:0;
   z-index: -1;
 }
-
 
 /* Section 1 end */
 
@@ -228,12 +253,12 @@ div.socials a svg:hover {
       margin-bottom: 10vw;
       display: flex;
       flex-direction: column;
-      align-items:flex-start;
+      align-items:center;
     }
 
     .section1-container h1 {
       margin: 2vw 0 0 0;
-      font-size: 14vw;
+      font-size: 18vw;
       color: #fff;
       display: flex;
       align-items: baseline;
@@ -244,7 +269,7 @@ div.socials a svg:hover {
       align-items: center;
       position: absolute;
       left: 49%;
-      top: 20%;
+      top: 30%;
       transform: rotate(0deg);
     }
 
@@ -310,24 +335,37 @@ div.socials a svg:hover {
       transform: translateY(-7vw);
     }
 
-div.socials a {
-  position: relative;
-  margin: 0.7vw;
-}
-
-div.socials a svg {
-  width: 5vw;
-  height: 5vw;
-  fill: #fff;
-  position: absolute;
-  transition: all 0.3s ease;
-}
-div.socials a svg:hover {
-  /* width: 2.6vw;
-  height: 2.6vw; */
-  transform: scale(1.4);
-  fill: #fff;
-}
+    div.socials {
+      bottom: 8vw;
+      margin: 1em auto 2em auto;
+      padding: 2vw;
+      gap: 8vw;
+    }
+    
+    div.socials div:nth-child(1), div.socials div:nth-child(3) {
+      position: absolute;
+      display: none;
+    }
+    
+    div.socials div a {
+      position: relative;
+      display: inline-block;
+      margin: 0 5vw;
+    }
+    
+    div.socials div a svg {
+      width: 5vw;
+      height: 5vw;
+      fill: #fff;
+      position: absolute;
+      transition: all 0.3s ease;
+    }
+    div.socials div a svg:hover {
+      /* width: 2.6vw;
+      height: 2.6vw; */
+      transform: scale(1.4);
+      fill: #fff;
+    }
 
     /* Section 1 end */
 }

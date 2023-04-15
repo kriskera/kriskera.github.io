@@ -316,25 +316,38 @@ html {
 }
 
 div.socials {
+  width: 100%;
   position: absolute;
   display: block;
   bottom: 0;
   display: flex;
+  justify-content: center;
   margin: 0 auto;
-  padding: 2vw;
+  padding: 1vw;
   gap: 1vw;
   z-index: 4;
   pointer-events: none;
 }
 
-div.socials a {
+div.socials>*{
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  font-size: 0.7vw;
+}
+
+div.socials div:nth-child(1){
+  justify-content: left;
+}
+
+div.socials div a {
   color: #fff;
   position: relative;
-  margin: 0.7vw;
+  margin: 1vw;
   pointer-events: all;
 }
 
-div.socials a svg {
+div.socials div a svg {
   width: 1.2vw;
   height: 1.2vw;
   color: #fff;
@@ -342,7 +355,7 @@ div.socials a svg {
   position: absolute;
   transition: all 0.3s ease;
 }
-div.socials a svg:hover {
+div.socials div a svg:hover {
   /* width: 2.6vw;
   height: 2.6vw; */
   transform: scale(1.4);
@@ -467,8 +480,6 @@ div.socials a svg:hover {
   justify-content: center;
 }
 
-
-
 .welcome-to div {
   transform: translateY(-1vw);
 }
@@ -497,19 +508,25 @@ div.socials {
   gap: 8vw;
 }
 
-div.socials a {
-  position: relative;
-  margin: 0.7vw;
+div.socials div:nth-child(1), div.socials div:nth-child(3) {
+  position: absolute;
+  display: none;
 }
 
-div.socials a svg {
+div.socials div a {
+  position: relative;
+  display: inline-block;
+  margin: 0 5vw;
+}
+
+div.socials div a svg {
   width: 5vw;
   height: 5vw;
   fill: #fff;
   position: absolute;
   transition: all 0.3s ease;
 }
-div.socials a svg:hover {
+div.socials div a svg:hover {
   /* width: 2.6vw;
   height: 2.6vw; */
   transform: scale(1.4);
