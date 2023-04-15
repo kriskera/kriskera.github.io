@@ -144,13 +144,13 @@
 }
 
 .projects-item:hover h3 {
-  filter: drop-shadow(0 2px 15px #000);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.685))
+
 
 }
 .projects-item:hover img {
   scale: 1.05;
 }
-
 
 div.socials {
   display: block;
@@ -240,7 +240,7 @@ div.socials div a svg:hover {
 @media (max-width: 767.98px) { 
     
     .section1 {
-      padding: 20vw 0 0 0;
+      padding: 18vw 0 0 0;
     }  
 
     .section1-container {
@@ -250,7 +250,7 @@ div.socials div a svg:hover {
 
     .projects-heading {
       height: 50vw;
-      margin-bottom: 10vw;
+      margin: 0vw 0 18vw 0;
       display: flex;
       flex-direction: column;
       align-items:center;
@@ -258,7 +258,7 @@ div.socials div a svg:hover {
 
     .section1-container h1 {
       margin: 2vw 0 0 0;
-      font-size: 18vw;
+      font-size: 20vw;
       color: #fff;
       display: flex;
       align-items: baseline;
@@ -266,11 +266,11 @@ div.socials div a svg:hover {
 
     .pacman-container {
       display: flex;
+      margin: 0 auto;
       align-items: center;
+      justify-content: center;
       position: absolute;
-      left: 49%;
-      top: 30%;
-      transform: rotate(0deg);
+      left: 48%;
     }
 
     .pacman {
@@ -285,17 +285,14 @@ div.socials div a svg:hover {
     }
 
     .projects-heading .projects-content {
-      width: 80%;
-      font-size: 2vw;
+      width: 90%;
+      font-size: 2.2vw;
       display: flex;
-      justify-content: right;
       text-align: right;
-      text-justify: auto;
-      align-self: flex-end;
     }
 
     .projects-container {
-      gap: 20vw;
+      gap: 8vw;
     }
 
     .projects-container .projects-item {
@@ -310,13 +307,20 @@ div.socials div a svg:hover {
     }
 
     .projects-item h3 {
-      font-size: 9vw;
+      font-size: 12vw;
       filter: drop-shadow(0 4px 10px #000);
     }
     
     .projects-item img {
       width: auto;
       height: 101%;
+    }
+
+    .projects-item:nth-child(3) {
+      flex-direction: column;
+    }
+    .projects-item:nth-child(3) img{
+      align-self: flex-start;
     }
 
     div.socials {
