@@ -1,6 +1,6 @@
 /* Section1 */
 .section1 {
-    cursor: pointer;
+    cursor: default;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -45,7 +45,6 @@
   font-weight: 600;
   word-spacing: 0.4vw;
 }
-
 
 .bit-color-shift .bit-letter{
   animation: color-animation 1s linear infinite;
@@ -136,6 +135,14 @@ input:focus-visible, textarea:focus-visible {
   border-radius: 0.7vw;
 }
 
+.arrow-animated {
+  height: 4vw;
+  width: auto ;
+  margin: 0 auto;
+  display: block;
+  padding: 0.1vw;
+}
+
 .form form .submit-btn {
   margin: 1.5vw 0;
   color: #000;
@@ -204,14 +211,19 @@ div.socials a svg:hover {
 /* Media Queries */
 @media (max-width: 767.98px) { 
     
+    html,body {
+      height: 100%;
+    }
+  
     .section1 {
-      padding: 20vw 0 0 0;
+      padding: 15vw 0 0 0;
     }  
 
     .section1-container {
       width: 100%;
       margin: 0 auto;
       padding: 5vw;
+      overflow: hidden;
     }
 
     .connect-heading {
@@ -219,23 +231,24 @@ div.socials a svg:hover {
     }
 
     .connect-heading .h1 span, h1 {
-      font-size: 12vw;
-      line-height: 12vw;
+      font-size: 13vw;
+      line-height: 14vw;
     }
 
     .connect-heading .established {
       font-size: 5vw;
       word-spacing: 0.8vw;
     }
+  
     
     .form form label {
-      font-size: 3vw;
+      font-size: 0.8em;
       margin: 1vw 0;
     }
     
     .form form input, .form form select, .form form textarea {
-      padding: 2vw;
-      margin: 0 0 3vw 0;
+      padding: 2em;
+      margin: 0 0 3em 0;
       font-family: Poppins;
       resize: none;
       transition: border-radius 0.2s ease;
@@ -247,16 +260,30 @@ div.socials a svg:hover {
 
     .form .cloud {
       position: absolute;
-      width: 10vw;
-      top:  -6vw;
-      left: -3vw;
+      width: 20vw;
+      top:  -3vw;
+      left: 83%;
+      transform: rotate(50deg);
+      z-index: -1;
+    }
+    
+
+    .form form input, .form form select, .form form textarea {
+      padding: 0.6em;
+      margin: 0 0 0.5em 0;
+      font-family: Poppins;
+      font-size: 1em;
+      resize: none;
+      transition: border-radius 0.2s ease;
     }
 
+    .arrow-animated {
+      height: 3em;
+      padding: 0.1em;
+    }
+    
     div.socials {
-      height: 10vw;
-      bottom: 8vw;
-      margin: 0 auto;
-      padding: 20vw;
+      margin: 0em 0 1em 0 ;
       gap: 8vw;
     }
 
@@ -268,24 +295,18 @@ div.socials a svg:hover {
       transform: translateY(-7vw);
     }
 
-  div.socials a {
-    position: relative;
-    margin: 0.7vw;
-  }
-  
-  div.socials a svg {
-    width: 5vw;
-    height: 5vw;
-    fill: #fff;
-    position: absolute;
-    transition: all 0.3s ease;
-  }
-  div.socials a svg:hover {
-    /* width: 2.6vw;
-    height: 2.6vw; */
-    transform: scale(1.4);
-    fill: #fff;
-  }
+    div.socials a {
+      position: relative;
+      margin: 0.7vw;
+    }
+    
+    div.socials a svg {
+      width: 5vw;
+      height: 5vw;
+      fill: #fff;
+      position: absolute;
+      transition: all 0.3s ease;
+    }
 
     /* Section 1 end */
 }
