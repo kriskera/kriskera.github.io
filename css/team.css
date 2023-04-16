@@ -1,9 +1,4 @@
 /* Section1 */
-.navbar-pc {
-  border-bottom: 5px solid black;
-  position: fixed;
-}
-
 .section1 {
     cursor: pointer;
     width: 100%;
