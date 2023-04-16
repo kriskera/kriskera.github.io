@@ -34,7 +34,6 @@
   pointer-events: none;
 }
 
-
 .pacman-container{
   display:flex;
   align-items:center;
@@ -135,7 +134,7 @@
   transition: filter 0.5s ease;
 }
 
-.projects-item img{
+.projects-item img {
   width: 100%;
   height: auto;
   filter: brightness(80%);
@@ -145,8 +144,6 @@
 
 .projects-item:hover h3 {
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.685))
-
-
 }
 .projects-item:hover img {
   scale: 1.05;
@@ -234,7 +231,6 @@ div.socials div a svg:hover {
   top:0;
   z-index: -1;
 }
-
 /* Section 1 end */
 
 /* Media Queries */
@@ -371,7 +367,6 @@ div.socials div a svg:hover {
       transform: scale(1.4);
       fill: #fff;
     }
-
     /* Section 1 end */
 }
 /* Media Queries end */

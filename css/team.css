@@ -1,4 +1,9 @@
 /* Section1 */
+.navbar-pc {
+  border-bottom: 5px solid black;
+  position: fixed;
+}
+
 .section1 {
     cursor: pointer;
     width: 100%;
@@ -13,7 +18,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 97%;
+  width: 94%;
   margin: 3vw auto 0  auto;
   z-index: 4;
 }
@@ -150,7 +155,7 @@
 .wtjot-img {
   position: absolute;
   width: 18vw;
-  right: 2vw;
+  right: 0vw;
   bottom: -30%;
 }
 
@@ -194,8 +199,6 @@ div.socials a svg:hover {
   top:0;
   z-index: -1;
 }
-
-
 /* Section 1 end */
 
 /* Media Queries */
@@ -287,8 +290,6 @@ div.socials a svg:hover {
       gap: 8vw;
     }
 
-
-
     div.socials a {
       position: relative;
       margin: 0.7vw;
@@ -301,7 +302,6 @@ div.socials a svg:hover {
       position: absolute;
       transition: all 0.3s ease;
     }
-
     /* Section 1 end */
 }
 /* Media Queries end */

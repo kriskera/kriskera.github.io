@@ -8,11 +8,6 @@ html {
 
 }
 
-.minecraft {
-  font-family: minecraft;
-}
-
-
 .section1 {
     cursor: pointer;
     position: relative;
@@ -222,92 +217,30 @@ html {
   position: absolute;
   top: 1vw;
   left: 1.5vw;
-  text-align: center;
-  font-family: "Cactus Jack";
-  font-size: 3.1vw ;
   line-height: 3vw;
-  color: #fff;
   transform: rotate(-10deg);
   z-index: 4;
   pointer-events: none;
-
-  /* -webkit-animation: squiggly-anim 0.6s linear infinite;
-  animation: squiggly-anim 0.6s linear infinite; */
 }
 
 .fftdraw img {
   width: 15vw;
 }
 
-.fftdraw u {
-  display: inline-block;
-  text-decoration: none;
-  padding: 0.3vw 0;
-  border-bottom: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 76%, rgba(255,255,255,0) 99%) 5px solid;
-}
-
-.fftdraw u::after {
-  content: "";
-  /*display: block; not needed when position:absolute used in this case*/
-  position: absolute;
-  background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 46%, rgba(0,0,0,0) 88%, rgba(255,255,255,0) 100%);
-  height: 0.2vw;
-  bottom: 2.9vw;
-  left: 6.6vw;/* match width of text and padding*/
-  right: 0;/* match width of text and padding*/
-  width: 40%;
-}
-
-@keyframes squiggly-anim {
-  0% {
-    filter: url("#squiggly-0");
-  }
-  25% {
-    filter: url("#squiggly-1");
-  }
-  50% {
-    filter: url("#squiggly-2");
-  }
-  75% {
-    filter: url("#squiggly-3");
-  }
-  100% {
-    filter: url("#squiggly-4");
-  }
-}
-
 .welcome-to {
   position: absolute;
   right: 10vw;
   bottom: 6vw;
-  color: #fff;
-  font-family: "Cactus Jack";
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 4;
   pointer-events: none;
-
-  /* -webkit-animation: squiggly-anim 0.6s linear infinite;
-  animation: squiggly-anim 0.6s linear infinite; */
 }
 
 .welcome-to div {
   transform: translateY(-0.8vw);
   transform: rotate(9deg);
-}
-
-.welcome-to div span {
-  display: block;
-  line-height: 1.5vw;
-}
-
-.welcome-to div span:nth-child(1) {
-  font-size: 2.5vw;
-}
-.welcome-to div span:nth-child(2) {
-  font-size: 1.4vw;
 }
 
 .welcome-to img {
@@ -376,11 +309,11 @@ div.socials div a svg:hover {
   height: 100%;
  }
  
- .stroke-color {
-   border-radius: 50%;
-   width: 30px;
-   height: 30px;
- }
+.stroke-color {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
 
 .draw #clear-btn {
   display: none;
@@ -392,140 +325,110 @@ div.socials div a svg:hover {
   z-index: -1;
   opacity: 100%;
 }
-
 /* Section 1 end */
 
 /* Media Queries */
 @media (max-width: 767.98px) { 
     
-    .section1 {
-        background-size: auto;
-        background-position: center;
-    }  
+  .section1 {
+      background-size: auto;
+      background-position: center;
+  }  
 
-.section1-container {
-  width: 89%;
-  margin: 0 auto;
-}
+  .section1-container {
+    width: 89%;
+    margin: 0 auto;
+  }
 
-.section1-container-item {
-  width: 100%;
-}
+  .section1-container-item {
+    width: 100%;
+  }
 
-.section1-container-item .s1ci-tb {
-  margin: 0;
-  color: #fff;
-  font-size: 18vw;
-  font-weight: 600;
-}
+  .section1-container-item .s1ci-tb {
+    margin: 0;
+    color: #fff;
+    font-size: 18vw;
+    font-weight: 600;
+  }
 
-.section1-container-item .s1ci-tb img {
-  width: 5vw;
-  margin-top: 7vw;
-}
+  .section1-container-item .s1ci-tb img {
+    width: 5vw;
+    margin-top: 7vw;
+  }
 
-.section1-container-item .s1ci-tb .text {
-  height: 21vw;
-}
+  .section1-container-item .s1ci-tb .text {
+    height: 21vw;
+  }
 
-.section1-container-item .s1ci-center {
-  top: 53%;
-  width: 100%;
-  font-size: 1.7vw;
-}
+  .section1-container-item .s1ci-center {
+    top: 53%;
+    width: 100%;
+    font-size: 1.7vw;
+  }
 
-.section1-container-item .s1ci-center span {
-  line-height: 1.2vw;
-}
+  .section1-container-item .s1ci-center span {
+    line-height: 1.2vw;
+  }
 
-.section1-container-item .s1ci-center span:nth-child(2){
-  margin-right: 13vw;
-}
+  .section1-container-item .s1ci-center span:nth-child(2){
+    margin-right: 13vw;
+  }
 
-.bit-color-shift .bit-letter{
-  animation: color-animation 6s linear infinite;
-}
+  .bit-color-shift .bit-letter{
+    animation: color-animation 6s linear infinite;
+  }
 
-.draw-text {
-  font-size: 2vw;
-  position: absolute;
-  top: 3vw;
-  left: 0;
-}
+  .fftdraw {
+    position: absolute;
+    top: 5%;
+    transform: rotate(-10deg);
+  }
 
-.fftdraw {
-  position: absolute;
-  top: 5%;
-  transform: rotate(-10deg);
-}
+  .fftdraw img {
+    width: 40vw;
+  }
 
-.fftdraw img {
-  width: 40vw;
-}
+  .welcome-to {
+    right: 20vw;
+    bottom: 25vw;
+  }
 
-.welcome-to {
-  position: absolute;
-  right: 20vw;
-  bottom: 25vw;
-  color: #fff;
-  font-family: "Cactus Jack";
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .welcome-to img {
+    position: absolute;
+    width: 35vw;
+  }
 
-.welcome-to div {
-  transform: translateY(-1vw);
-}
+  div.socials {
+    bottom: 8vw;
+    margin: 0 auto;
+    padding: 2vw;
+    gap: 8vw;
+  }
 
-.welcome-to div span {
-  display: block;
-  line-height: 4vw;
-}
+  div.socials div:nth-child(1), div.socials div:nth-child(3) {
+    position: absolute;
+    display: none;
+  }
 
-.welcome-to div span:nth-child(1) {
-  font-size: 5vw;
-}
-.welcome-to div span:nth-child(2) {
-  font-size: 3.2vw;
-}
+  div.socials div a {
+    position: relative;
+    display: inline-block;
+    margin: 0 5vw;
+  }
 
-.welcome-to img {
-  position: absolute;
-  width: 35vw;
-}
-
-div.socials {
-  bottom: 8vw;
-  margin: 0 auto;
-  padding: 2vw;
-  gap: 8vw;
-}
-
-div.socials div:nth-child(1), div.socials div:nth-child(3) {
-  position: absolute;
-  display: none;
-}
-
-div.socials div a {
-  position: relative;
-  display: inline-block;
-  margin: 0 5vw;
-}
-
-div.socials div a svg {
-  width: 5vw;
-  height: 5vw;
-  fill: #fff;
-  position: absolute;
-  transition: all 0.3s ease;
-}
-div.socials div a svg:hover {
-  /* width: 2.6vw;
-  height: 2.6vw; */
-  transform: scale(1.4);
-  fill: #fff;
-}
+  div.socials div a svg {
+    width: 5vw;
+    height: 5vw;
+    fill: #fff;
+    position: absolute;
+    transition: all 0.3s ease;
+  }
+  div.socials div a svg:hover {
+    /* width: 2.6vw;
+    height: 2.6vw; */
+    transform: scale(1.4);
+    fill: #fff;
+  }
 
     /* Section 1 end */
 }

@@ -164,8 +164,6 @@ input:focus-visible, textarea:focus-visible {
   top:0;
   z-index: -1;
 }
-
-
 /* Section 1 end */
 
 /* Media Queries */
@@ -199,7 +197,6 @@ input:focus-visible, textarea:focus-visible {
       font-size: 5vw;
       word-spacing: 0.8vw;
     }
-  
     
     .form form label {
       font-size: 0.8em;
@@ -227,7 +224,6 @@ input:focus-visible, textarea:focus-visible {
       transform: rotate(50deg);
       z-index: -1;
     }
-    
 
     .form form input, .form form select, .form form textarea {
       padding: 0.6em;
@@ -268,7 +264,6 @@ input:focus-visible, textarea:focus-visible {
       position: absolute;
       transition: all 0.3s ease;
     }
-
     /* Section 1 end */
 }
 /* Media Queries end */
