@@ -8,6 +8,106 @@ html {
 
 }
 
+.toast {
+  position: absolute;
+  top: 5vw;
+  right: 30px;
+  border-radius: 12px;
+  background: rgba( 0, 0, 0, 0.55 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1px );
+-webkit-backdrop-filter: blur( 1px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 1em 2em 1.7em 2em;
+  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transform: translateX(calc(100% + 30px));
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+
+.toast.active {
+  transform: translateX(0%);
+}
+
+.toast .toast-content {
+  display: flex;
+  align-items: center;
+}
+
+.toast-content .check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
+  min-width: 3em;
+}
+
+.toast-content .message {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.message .text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #c4c4c4;
+}
+
+.message .text.text-1 {
+  font-weight: 600;
+  color: rgb(94, 94, 94);
+}
+
+.message-mobile {
+  display: none;
+  position: absolute;
+  visibility: hidden;
+}
+
+.toast .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.toast .close:hover {
+  opacity: 1;
+}
+
+.toast .progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+
+}
+
+.toast .progress:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #b5d555;
+}
+
+.progress.active:before {
+  animation: progress 9s linear forwards;
+}
+
+@keyframes progress {
+  100% {
+    right: 100%;
+  }
+}
+
 .section1 {
     cursor: pointer;
     position: relative;
@@ -18,11 +118,7 @@ html {
     justify-content: center;
     align-items: center;
     z-index: 4;
-    /* background-image: url("/assets/images/starry-night-sky.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
-    /* background-color: rgba(0, 0, 0, 0.31); */
+    overflow: hidden;
 } 
 
 .section1-container {
@@ -329,6 +425,57 @@ div.socials div a svg:hover {
 
 /* Media Queries */
 @media (max-width: 767.98px) { 
+
+.toast {
+  z-index: 100;
+  top: 20vw;
+  right: 0.5em;
+  padding: 1em 1em 1.5em 0.4em;
+  transform: translateX(calc(100% + 30px));
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+
+.toast-content .check {
+  height: 2em;
+  width: 2em;
+}
+
+.toast-content .message {
+  margin: 0 10px;
+}
+
+.message-pc {
+  display: none;
+  position: absolute;
+  visibility: hidden;
+}
+
+.message-mobile {
+  display: inline-block;
+  position: relative;
+  visibility: visible;
+}
+
+.message .text {
+  font-size: 0.8em;
+}
+
+.toast .close {
+  top: 5px;
+  right: 5px;
+  width: 2.3em;
+  height: 2.3em;
+}
+
+.toast .progress:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #b5d555;
+}
     
   .section1 {
       background-size: auto;
