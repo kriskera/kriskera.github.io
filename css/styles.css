@@ -9,6 +9,7 @@ html {
 }
 
 .toast {
+  z-index: 100;
   position: absolute;
   top: 5vw;
   right: 30px;
@@ -427,7 +428,6 @@ div.socials div a svg:hover {
 @media (max-width: 767.98px) { 
 
 .toast {
-  z-index: 100;
   top: 20vw;
   right: 0.5em;
   padding: 1em 1em 1.5em 0.4em;
