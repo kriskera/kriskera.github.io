@@ -1,4 +1,4 @@
-
+//navbar-mobile
 function myFunction() {
   var x = document.querySelector("#nav-menu");
   var y = document.querySelector(".navbar");
@@ -17,10 +17,11 @@ function myFunction() {
 }
 
 //disable right click
-// document.addEventListener("contextmenu", function (e){
-//   e.preventDefault();
-// }, false);
+document.addEventListener("contextmenu", function (e){
+  e.preventDefault();
+}, false);
 
+//notif
 const toast = document.querySelector(".toast");
 const closeIcon = document.querySelector(".close");
 const progress = document.querySelector(".progress");
