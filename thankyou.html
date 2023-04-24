@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connect | Dreaming in Digital</title>
+    <title>Thank You | Dreaming in Digital</title>
     <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/connect.css">
+    <link rel="stylesheet" href="/css/thankyou.css">
     <link rel="icon" href="/assets/images/favicon.gif" />
 
     <!-- Fonts -->
@@ -107,53 +107,9 @@
     <section class="section1">
         <!-- <h1>Dreaming<br> in Digital</h1> -->
         <div class="section1-container">
-          <div class="toast-cn">
-            <div class="toast-cn-content">
-              <svg xmlns="http://www.w3.org/2000/svg" class="check" width="16" height="16" fill="#b5d555" class="bi bi-envelope-check" viewBox="0 0 16 16">
-                <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
-                <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"/>
-              </svg>
-              <div class="message message-pc">
-                <span class="text text-1">Your query has been sent</span>
-                <span class="text text-2">We will be in touch shortly</span>
-              </div>
-            </div>
-            <svg class="close-cn" xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" fill="#b5d555" class="bi bi-x" viewBox="0 0 16 16"> <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/> </svg> 
-            <div class="progress-cn"></div>
-          </div>
-          <div class="connect-heading">
-            <div class="h1">
-              <span>Le<span style="font-family: minecraft;">t's</span></span>
-              <h1 style="font-family: minecraft;">Connect</h1>
-            </div>
-            <div class="established">
-              <div class="bit-color-shift">
-                Established in <span class="bit-letter bit-letter-1">2</span><span class="bit-letter bit-letter-2">0</span><span class="bit-letter bit-letter-3">2</span><span class="bit-letter bit-letter-4">2</span>
-              </div>
-            </div>
-          </div>
-          <div class="form">
-            <img src="/assets/images/gifs/cloud.gif" class="cloud">
-            <form action="https://formsubmit.co/karkerakrishna10@gmail.com" method="POST">
-              <label for="fname">First name</label><br>
-              <input type="text" id="fname" name="fname" placeholder="First Name"><br>
-              <label for="fname">Email</label><br>
-              <input type="text" id="fname" name="fname" placeholder="Email"><br>
-              <label for="query">Queries</label><br>
-              <select id="query" name="query">
-                <option value="none" selected disabled hidden>Choose an option</option>
-                <option value="complaint">Complaint</option>
-                <option value="joinus">Join us</option>
-                <option value="workwithus">Work with us</option>
-              </select><br>
-              <label for="fname">Message</label><br>
-              <textarea rows="4" cols="50" name="comment" form="usrform"></textarea>
-              <img src="/assets/images/gifs/arrow-animated.gif" alt="" class="arrow-animated">
-              <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_next" value="http://127.0.0.1:5500/connect.html?formsubmitted">
-              <input class="submit-btn" type="submit" value="Send">
-            </form> 
-          </div>
+          <img src="/assets/images/connect/connect-checkmark.png" alt="">
+          <h1>Your query has been submitted</h1>
+          <span>We will be in touch shortly</span>
         </div>
     </section>
 
@@ -188,52 +144,8 @@
     <div class="cursor-dot-outline"></div>
     <div class="cursor-dot"></div>
 
-
     <script src="/js/cursor.js"></script>
     <script src="/js/script.js"></script>
     <script src="/js/stars.js"></script>
-
-    <script>
-      
-      //notif
-      const toastCN = document.querySelector(".toast-cn");
-      const closeIconCN = document.querySelector(".close-cn");
-      const progressCN = document.querySelector(".progress-cn");
-
-      let connecttimer1, connecttimer2;
-
-      function notifConnect() {
-        toastCN.classList.add("active");
-        progressCN.classList.add("active");
-      
-        connecttimer1 = setTimeout(() => {
-          toastCN.classList.remove("active");
-        }, 15000); //1s = 1000 milliseconds
-      
-        connecttimer2 = setTimeout(() => {
-          progressCN.classList.remove("active");
-        }, 300);
-      };
-
-      closeIconCN.addEventListener("click", () => {
-        toastCN.classList.remove("active");
-      
-        setTimeout(() => {
-          progressCN.classList.remove("active");
-        }, 300);
-      
-        clearTimeout(connecttimer1);
-        clearTimeout(connecttimer2);
-      });
-      
-      const url = new URL(window.location.href);
-      if (url.searchParams.has('formsubmitted')) {
-        notifConnect();
-        console.log('The query parameter is set');
-      } else {
-        console.log('The query parameter is not set');
-      }
-    </script>
-    
 </body>
 </html>

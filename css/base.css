@@ -575,7 +575,6 @@ div.socials div a svg:hover {
     visibility: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 
   .nav-menu ul {
@@ -619,7 +618,7 @@ div.socials div a svg:hover {
     flex-direction: column;
     justify-content: space-between;
     padding: 4vw 5vw;
-    gap: 1.2em;
+    gap: 1.5em;
   }
 
   .nav-menu-bar div {
@@ -638,8 +637,8 @@ div.socials div a svg:hover {
     display: flex;
     flex-direction: row;
     margin: 1em;
-    justify-content: space-around;
-    margin: 0.5em;
+    justify-content: space-evenly;
+    margin: 0.5em 0;
   }
 
   .nav-menu-bar div ul li {

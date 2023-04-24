@@ -1,4 +1,101 @@
 /* Section1 */
+
+.toast-cn {
+  z-index: 100;
+  position: absolute;
+  top: 5vw;
+  right: 30px;
+  border-radius: 12px;
+  background: rgba( 0, 0, 0, 0.55 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 1px );
+  -webkit-backdrop-filter: blur( 1px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 1em 2em 3em 2em;
+  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transform: translateX(calc(100% + 30px));
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+
+.toast-cn.active {
+  transform: translateX(0%);
+}
+
+.toast-cn .toast-cn-content {
+  display: flex;
+  align-items: center;
+  transform: translateY(25%);
+}
+
+.toast-cn-content .check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4em;
+  min-width: 4em;
+}
+
+.toast-cn-content .message {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.message .text {
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #fff;
+}
+
+.message .text.text-1 {
+  font-weight: 600;
+  color: #b5d555;
+}
+
+.toast-cn .close-cn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.toast-cn .close-cn:hover {
+  opacity: 1;
+}
+
+.toast-cn .progress-cn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+
+}
+
+.toast-cn .progress-cn:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #b5d555;
+}
+
+.progress-cn.active:before {
+  animation: progress-cn 15s linear forwards;
+}
+
+@keyframes progress-cn {
+  100% {
+    right: 100%;
+  }
+}
+
 .section1 {
     cursor: default;
     width: 100%;
@@ -171,8 +268,53 @@ input:focus-visible, textarea:focus-visible {
     
     html,body {
       height: 100%;
+      overflow-x: hidden;
     }
   
+    body {
+      position: relative;
+    }
+    
+.toast-cn {
+  width: 95%;
+  top: 20vw;
+  right: 0.5em;
+  padding: 1em 1em 3em 1em;
+  transform: translateX(calc(100% + 30px));
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+  background-color: #000;
+}
+
+.toast-cn-content .check {
+  height: 3em;
+  width: 3em;
+}
+
+.toast-cn-content .message {
+  margin: 0 0 0 1em;
+}
+
+.message .text {
+  font-size: 1em;
+}
+
+.toast-cn .close-cn {
+  top: 5px;
+  right: 5px;
+  width: 3em;
+  height: 3em;
+}
+
+.toast-cn .progress-cn:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #b5d555;
+}
+    
     .section1 {
       padding: 15vw 0 0 0;
     }  
