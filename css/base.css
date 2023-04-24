@@ -458,225 +458,98 @@ div.socials div a svg:hover {
     display: block;
   }
 
-  /* Navbar */
+  /* Navbar PC */
   .navbar-pc {display: none;}
+  /* Navbar PC */
   
-/* Navbar Mobile */
-.menu {
-  background-color: transparent;
-  border: none;
-  display: flex;
-  padding: 0;
-  outline: none;
-}
-.line {
-  fill: none;
-  stroke: #cdf05e;
-  stroke-width: 6;
-  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.line1 {
-  stroke-dasharray: 60 207;
-  stroke-width: 9;
-}
-.line2 {
-  stroke-dasharray: 60 60;
-  stroke-width: 9;
-}
-.line3 {
-  stroke-dasharray: 60 207;
-  stroke-width: 9;
-}
-.opened .line1 {
-  stroke-dasharray: 90 207;
-  stroke-dashoffset: -134;
-  stroke-width: 9;
-}
-.opened .line2 {
-  stroke-dasharray: 1 60;
-  stroke-dashoffset: -30;
-  stroke-width: 9;
-}
-.opened .line3 {
-  stroke-dasharray: 90 207;
-  stroke-dashoffset: -134;
-  stroke-width: 9;
-}
+  /* Navbar Mobile */
+  .menu {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    padding: 0;
+    outline: none;
+  }
+  .line {
+    fill: none;
+    stroke: #cdf05e;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 9;
+  }
+  .line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 9;
+  }
+  .line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 9;
+  }
+  .opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 9;
+  }
+  .opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 9;
+  }
+  .opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 9;
+  }
 
-.navbar {
-  display: block;
-  position: fixed;
-  width: 100%;
-  transition: height 0.5s ease;
-  z-index: 5;
-  margin: 0 0 3em 0;
-  background: rgba( 0, 0, 0, 0.6 );
-  backdrop-filter: blur( 15px );
-  -webkit-backdrop-filter: blur( 15px );
-}
+  .navbar {
+    display: block;
+    position: fixed;
+    width: 100%;
+    transition: height 0.5s ease;
+    z-index: 5;
+    margin: 0 0 3em 0;
+    background: rgba( 0, 0, 0, 0.6 );
+    backdrop-filter: blur( 15px );
+    -webkit-backdrop-filter: blur( 15px );
+  }
 
-.navbar-container {
-  width: 100%;
-  padding: 2vw 0.5em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 0.1vw solid white;
-  border-top: 0.1vw solid white;
+  .navbar-container {
+    width: 100%;
+    padding: 2vw 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1vw solid white;
+    border-top: 0.1vw solid white;
 
-  background: rgba( 0, 0, 0, 0.6 );
-  backdrop-filter: blur( 15px );
-  -webkit-backdrop-filter: blur( 15px );
-}
+    background: rgba( 0, 0, 0, 0.6 );
+    backdrop-filter: blur( 15px );
+    -webkit-backdrop-filter: blur( 15px );
+  }
 
-.navbar-container > * {
-  width: 20%;
-}
+  .navbar-container > * {
+    width: 20%;
+  }
 
-.logo-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo {
-  align-self: center;
-  width: 4vw;
-}
-
-.navbar-container div span {
-  display: inline-block;
-  color: #fff;
-  font-family: "Poppins", Helvetica;
-  font-size: 0.9vw;
-  line-height: 1.1em;
-  width: 15em;
-}
-
-green {
-  color: #cdf05e;
-}
-
-.navbar-container button {
-  display: flex;
-  justify-content: right;
-}
-
-.navbar-container button svg {
-  width: 3vw;
-  height: 3vw;
-}
-
-#nav-menu {
-  width: 100%;
-  transition: opacity 0.7s;
-  visibility: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.nav-menu ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 2em 0;
-}
-
-.nav-menu ul li a {
-  font-size: 15vw;
-  padding: 0 0.5em;
-  position: relative;
-  display: inline-block;
-  font-weight: 800;
-  color: #fff;
-  background: linear-gradient(to right, #cdf05e, #cdf05e 50%, rgb(255, 255, 255) 50%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200% 100%;
-  background-position: 100%;
-  transition: background-position 1000ms ease;
-  text-decoration: none;
-}
-
-.nav-menu ul li a:hover {
-  background-position: 0 100%;
-}
-
-.nav-menu ul li a svg {
-  width: 7vw;
-  height: 7vw;
-}
-
-.nav-menu-bar {
-  width: 100%;
-  color: #fff;
-  border-top: 0.07vw solid white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 4vw 5vw;
-  gap: 1.2em;
-}
-
-.nav-menu-bar div {
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-}
-
-.nav-menu-bar div span {
-  font-size: 3.5vw;
-  font-weight: 100;
-  text-align: center;
-}
-
-.nav-menu-bar div ul {
-  display: flex;
-  flex-direction: row;
-  margin: 1em;
-  justify-content: space-around;
-  margin: 0.5em;
-}
-
-.nav-menu-bar div ul li {
-  display: inline-block;
-}
-
-.nav-menu-bar div ul li a{
-  font-size: 0.8vw;
-  font-weight: 500;
-}
-
-.nav-menu-bar div a {
-  font-size: 4.5vw;
-  margin: 0.5em;
-  text-align: center;
-  font-weight: 500;
-  color: #fff;
-}
-
-.nav-menu-bar .copyright {
-  margin: 0.5em 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.nav-menu-bar .copyright span, .nav-menu-bar .copyright span a {
-  font-size: 2.3vw;
-}
-/* Navbar mobile end */
+  .logo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .logo {
+    align-self: center;
     width: 15vw;
   }
 
   .navbar-container div span {
-    display: none;
+    display: inline-block;
+    color: #fff;
+    font-family: "Poppins", Helvetica;
     font-size: 2.5vw;
     line-height: 1.1em;
     width: 12em;
@@ -686,6 +559,120 @@ green {
     width: 12vw;
     height: 12vw;
   }
+
+  green {
+    color: #cdf05e;
+  }
+
+  .navbar-container button {
+    display: flex;
+    justify-content: right;
+  }
+
+  #nav-menu {
+    width: 100%;
+    transition: opacity 0.7s;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2em 0;
+  }
+
+  .nav-menu ul li a {
+    font-size: 15vw;
+    padding: 0 0.5em;
+    position: relative;
+    display: inline-block;
+    font-weight: 800;
+    color: #fff;
+    background: linear-gradient(to right, #cdf05e, #cdf05e 50%, rgb(255, 255, 255) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 1000ms ease;
+    text-decoration: none;
+  }
+
+  .nav-menu ul li a:hover {
+    background-position: 0 100%;
+  }
+
+  .nav-menu ul li a svg {
+    width: 7vw;
+    height: 7vw;
+  }
+
+  .nav-menu-bar {
+    width: 100%;
+    color: #fff;
+    border-top: 0.07vw solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4vw 5vw;
+    gap: 1.2em;
+  }
+
+  .nav-menu-bar div {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+  }
+
+  .nav-menu-bar div span {
+    font-size: 3.5vw;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  .nav-menu-bar div ul {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+    justify-content: space-around;
+    margin: 0.5em;
+  }
+
+  .nav-menu-bar div ul li {
+    display: inline-block;
+  }
+
+  .nav-menu-bar div ul li a{
+    font-size: 0.8vw;
+    font-weight: 500;
+  }
+
+  .nav-menu-bar div a {
+    font-size: 4.5vw;
+    margin: 0.5em;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .nav-menu-bar .copyright {
+    margin: 0.5em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .nav-menu-bar .copyright span, .nav-menu-bar .copyright span a {
+    font-size: 2.3vw;
+  }
+  /* Navbar mobile end */
+
+
 
 
   
