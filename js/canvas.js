@@ -87,8 +87,16 @@
      }
    });
 
-   document.addEventListener('touchstart', function (e) {
-    if(e.touches.length > 1) {
-      Restore();
-    }
-  });
+
+
+   var timeout;
+   var lastTap = 0;
+   document.addEventListener('touchend', function(event) {
+       var currentTime = new Date().getTime();
+       var tapLength = currentTime - lastTap;
+       clearTimeout(timeout);
+       if (tapLength < 500 && tapLength > 0) {
+           Restore();  
+       }
+       lastTap = currentTime;
+   });
