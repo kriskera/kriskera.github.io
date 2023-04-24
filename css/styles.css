@@ -498,18 +498,18 @@ div.socials div a svg:hover {
   }
 
   .section1-container-item .s1ci-tb img {
-    width: 5vw;
+    width: 6vw;
     margin-top: 7vw;
   }
 
   .section1-container-item .s1ci-tb .text {
-    height: 21vw;
+    height: 23vw;
   }
 
   .section1-container-item .s1ci-center {
-    top: 53%;
+    top: 50%;
     width: 100%;
-    font-size: 1.7vw;
+    font-size: 1.9vw;
   }
 
   .section1-container-item .s1ci-center span {
@@ -541,7 +541,7 @@ div.socials div a svg:hover {
 
   .welcome-to img {
     position: absolute;
-    width: 35vw;
+    width: 40vw;
   }
 
   div.socials {
