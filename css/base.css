@@ -339,8 +339,8 @@ green {
 /* Preload */
 .preload {
   font-family: "Press Start 2P", cursive;
-  place-items: center;
   height: 100%;
+  box-sizing: border-box;
   z-index: 30;
   margin: 0;
   background-color: black;
@@ -358,7 +358,7 @@ green {
 }
 
 @keyframes mymove {
-  from {height: 100vh;}
+  from {height: 100%;}
   to {height: 0vh; opacity: 0;}
 }
 
