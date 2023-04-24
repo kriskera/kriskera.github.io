@@ -87,6 +87,11 @@
      }
    });
 
+   document.addEventListener('touchstart', function (e) {
+    if(e.touches.length > 1) {
+      Restore();
+    }
+  });
 
 
    var timeout;
