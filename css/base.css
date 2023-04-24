@@ -104,6 +104,7 @@ a {
   color: #000;
   text-decoration: none;
   display: flex;
+  cursor: url('/assets/cursors/pointer.cur'), auto;
 }
 
 /* Hide extra text */

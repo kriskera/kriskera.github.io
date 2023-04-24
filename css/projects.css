@@ -1,4 +1,8 @@
 /* Section1 */
+body {
+  cursor: url('/assets/cursors/cursor.cur'), auto;
+}
+
 .section1 {
     cursor: pointer;
     width: 100%;
@@ -123,7 +127,7 @@
   align-items: center;
   justify-content: center;
   color: #fff;
-  cursor: pointer;
+  cursor: url('/assets/cursors/pointer.cur'), auto;
   overflow: hidden;
 }
 
