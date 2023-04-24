@@ -340,7 +340,7 @@ green {
 .preload {
   font-family: "Press Start 2P", cursive;
   place-items: center;
-  height: 100vh;
+  height: 100%;
   z-index: 30;
   margin: 0;
   background-color: black;
