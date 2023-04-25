@@ -25,10 +25,10 @@
 }
 
 .projects-heading {
-  width: 100%;
+  width: 94%;
   height: 18vw;
   padding: 2vw;
-  margin:  0 0 1vw 0;
+  margin:  0 auto 1vw auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -134,15 +134,15 @@
   width: 100%;
   height: auto;
   filter: brightness(80%);
-  scale: 1.01;
-  transition: scale 0.4s ease;
+  scale: 1.15;
+  transition: scale 0.8s ease;
 }
 
 .projects-item:hover h3 {
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.685))
 }
 .projects-item:hover img {
-  scale: 1.05;
+  scale: 1.01;
 }
 
 div.socials {

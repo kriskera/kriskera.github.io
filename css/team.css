@@ -19,9 +19,11 @@
 
 .team-heading {
   width: 100%;
+  margin: 2vw 0;
   padding: 2vw;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .section1-container:nth-child(1) .team-heading {
@@ -48,22 +50,14 @@
 .team-heading .team-content {
   color: #fff;
   width: 36%;
-  font-size: 1vw;
+  font-size: 1.2vw;
   display: flex;
   justify-content: right;
-  text-justify: auto;
+  text-align: right;
 }
 
 .team-content .team-content-container {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.team-content .team-content-container div {
-  display: flex;
-  justify-content: space-between;
 }
 
 .team {

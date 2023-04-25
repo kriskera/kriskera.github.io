@@ -25,7 +25,7 @@ a {
 
 ::selection {
   color: #000000;
-  background: #b5d555;
+  background: var(--badass);
 }
 
 @font-face {
@@ -54,7 +54,7 @@ a {
 .cursor-dot {
   width: 10px;
   height: 10px;
-  background-color: #cdf05e;
+  background-color: var(--badass);
 }
 
 .cursor-dot-outline {
