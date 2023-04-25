@@ -3,7 +3,7 @@ var speed_limit = 0.4     // 2
 var accelerate = true;  // true
 var speed = 0;				  // 0 - initial speed
 var starsize = 7;       // 4
-var stars = 1000;			  // 1600
+var stars = 800;			  // 1600
 var fov = 80;				    // 100 - not actual fov in degrees
 var extraW = 5000;      // 5000
 var extraH = 2400;	    // 2400
@@ -143,9 +143,9 @@ function animate() {
 	});
 
 	ctx.strokeStyle = 'rgb(255,255,255)';
-	drawLines(project(points));
+	// drawLines(project(points));
 	//drawRects(project(points));
-	//drawCircles(project(points));
+	drawCircles(project(points));
 	//drawText(project(points), "♥️");
 	
 	ctx.restore();
