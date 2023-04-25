@@ -1,5 +1,14 @@
 /* Section1 */
 
+html,body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+
 .toast-cn {
   z-index: 100;
   position: absolute;
@@ -267,11 +276,6 @@ input:focus-visible, textarea:focus-visible {
     
     html,body {
       height: 100%;
-      overflow-x: hidden;
-    }
-  
-    body {
-      position: relative;
     }
     
 .toast-cn {
