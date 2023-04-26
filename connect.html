@@ -251,11 +251,17 @@
       const url = new URL(window.location.href);
       if (url.searchParams.has('formsubmitted')) {
         notifConnect();
-        console.log('The query parameter is set');
-      } else {
-        console.log('The query parameter is not set');
-      }
+      };
     </script>
     
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PB3BM4VSYN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-PB3BM4VSYN');
+    </script>
 </body>
 </html>
