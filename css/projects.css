@@ -243,7 +243,8 @@ div.socials div a svg:hover {
 
     .projects-heading {
       height: 50vw;
-      margin: 8vw 0 25vw 0;
+      width: 97%;
+      margin: 8vw auto 25vw auto;
       display: flex;
       flex-direction: column;
       align-items:center;

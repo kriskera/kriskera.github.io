@@ -226,8 +226,8 @@ div.socials a svg:hover {
 
     .team-heading {
       margin: 8vw 0;
+      flex-direction: column;
       justify-content: center;
-      text-align: center;
     }
 
     .team-heading .h1 {
@@ -245,11 +245,11 @@ div.socials a svg:hover {
     } 
 
     .team-heading .team-content {
-      width: 90%;
-      font-size: 3vw;
+      width: 97%;
+      font-size: 4vw;
       display: flex;
       margin: 1.5em auto 0 auto;
-      text-justify: auto;
+      text-align: center;
     }
     
     .team-heading .h2 h2{
