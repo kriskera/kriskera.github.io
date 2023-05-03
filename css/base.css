@@ -580,6 +580,7 @@ div.socials div a svg:hover {
     background-position: 100%;
     transition: background-position 1000ms ease;
     text-decoration: none;
+    text-transform: uppercase;
   }
 
   .nav-menu ul li a:hover {
