@@ -571,7 +571,7 @@ div.socials div a svg:hover {
     position: relative;
     display: inline-block;
     font-weight: 800;
-    color: #fff;
+    color: #fff; 
     background: linear-gradient(to right, #cdf05e, #cdf05e 50%, rgb(255, 255, 255) 50%);
     background-clip: text;
     -webkit-background-clip: text;
