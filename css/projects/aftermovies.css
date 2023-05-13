@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     z-index: 4;
+    background: transparent;
 } 
 
 .section1-container {
@@ -67,7 +68,7 @@
 .content-container .video-card {
   width: 23%;
   color: #fff;
-  font-size: 1.05vw;
+  font-size: 1vw;
   cursor: url('/assets/cursors/pointer.cur'), auto;
 }
 
@@ -120,12 +121,13 @@ div.socials a svg:hover {
 /* Media Queries */
 @media (max-width: 767.98px) {    
     .section1 {
-      padding: 20vw 0 0 0;
+      padding: 15vw 0 0 0;
     }  
 
     .section1-container {
       width: 100%;
       margin: 0 auto;
+      overflow: hidden;
     }
 
     .section1-container:nth-child(1) {
@@ -145,7 +147,7 @@ div.socials a svg:hover {
     }
     
     .section1-heading .h1 h1, .section1-heading .h1 span {
-      font-size: 18vw;
+      font-size: 14vw;
       font-weight: 700;
       color: #fff;
       display: flex;
@@ -166,13 +168,45 @@ div.socials a svg:hover {
       display: inline-block;
     }
 
+    .recap-vid-bg {
+      display: flex;
+      justify-content: center;
+    }
 
+    .recap-vid-bg video {
+      width: auto;
+      height: 93vh;
+    }
+
+    .section1-container h2 {
+      font-size: 8vw;
+      margin: 8vw 0;
+    }
+
+    .content-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 15vw;
+      width: 85%;
+      margin: 8vw auto;
+    }
+
+    .content-container .video-card {
+      width: 100%;
+      font-size: 1em;
+      cursor: url('/assets/cursors/pointer.cur'), auto;
+    }
+
+    .video-card video {
+      width: 100%;
+      border-radius: 20px;
+    }
     
     div.socials {
       height: 10vw;
       bottom: 8vw;
       margin: 1.5em auto;
-      padding: 40vw 0vw 10vw 0;
+      padding: 10vw 0vw;
       gap: 8vw;
     }
 
