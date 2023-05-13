@@ -58,15 +58,16 @@
 
 .content-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 2vw;
   width: 93%;
+  gap: 2vw;
   margin: 2vw auto;
 }
 
 .content-container .video-card {
-  width: 23%;
+  display: block;
+  width: 22%;
   color: #fff;
   font-size: 1vw;
   cursor: url('/assets/cursors/pointer.cur'), auto;
