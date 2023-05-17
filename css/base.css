@@ -94,7 +94,7 @@ a {
   gap: 2em;
   font-size: 1.2vw;
   color: #000;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .navbar-pc-container ul li {
@@ -111,6 +111,9 @@ a {
   cursor: url('/assets/cursors/pointer.cur'), auto;
 }
 
+.boldlink {
+  font-weight: 700;
+}
 /* Hide extra text */
 .mask {
   text-transform: uppercase;

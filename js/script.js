@@ -1,3 +1,18 @@
+//highlight navlink
+function activelink() {
+  var current = location.pathname.split('/')[1];
+  console.log(current);
+  if (current === "") return;
+  var menuItems = document.querySelectorAll('.link');
+  for (var i = 0, len = menuItems.length; i < len; i++) {
+      if (menuItems[i].getAttribute("href").indexOf(current) !== -1) {
+        menuItems[i].className += " boldlink";
+      }
+  }
+};
+
+activelink();
+
 //navbar-mobile
 function myFunction() {
   var x = document.querySelector("#nav-menu");
@@ -53,5 +68,3 @@ closeIcon.addEventListener("click", () => {
   clearTimeout(timer1);
   clearTimeout(timer2);
 });
-
-
