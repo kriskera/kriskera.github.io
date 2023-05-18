@@ -5,25 +5,37 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+
 <url>
   <loc>https://dreamingindigital.in/</loc>
-  <lastmod>2023-05-03T13:16:21+00:00</lastmod>
+  <lastmod>2023-05-05T16:39:13+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://dreamingindigital.in/index.html</loc>
+  <lastmod>2023-05-05T16:39:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://dreamingindigital.in/projects.html</loc>
-  <lastmod>2023-05-03T13:16:21+00:00</lastmod>
+  <lastmod>2023-05-05T16:39:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dreamingindigital.in/team.html</loc>
-  <lastmod>2023-05-03T13:16:21+00:00</lastmod>
+  <lastmod>2023-05-05T16:39:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dreamingindigital.in/connect.html</loc>
-  <lastmod>2023-05-03T13:16:21+00:00</lastmod>
+  <lastmod>2023-05-05T16:39:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://dreamingindigital.in/privacy-policy.html</loc>
+  <lastmod>2023-05-05T16:39:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
 
 </urlset>

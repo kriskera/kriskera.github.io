@@ -52,12 +52,24 @@
 
 .recap-vid-bg {
   width: 100%;
-  height: auto;
+  height: 95vh;
+  overflow: hidden;
 }
+
+.recap-vid-bg:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgb(0, 0, 0) 90%);
+  width: 100%;
+  height: 4em;
+} 
 
 .recap-vid-bg video {
   width: 100%;
-  height: 100%;
 }
 
 .section1-container h2 {
