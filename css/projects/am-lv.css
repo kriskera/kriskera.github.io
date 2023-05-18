@@ -259,7 +259,7 @@ div.socials a svg:hover {
       align-items: center;
       gap: 15vw;
       width: 85%;
-      margin: 8vw auto;
+      margin: 8vw auto 16vw auto;
     }
 
     .content-container .video-card {
@@ -273,10 +273,15 @@ div.socials a svg:hover {
       width: 100%;
       border-radius: 20px;
     }
+
+    .placeholder {
+      position: absolute;
+      display: none;
+    }
     
     .checkoutsocial {
       width: 10em;
-      left: 32.5%;
+      left: 32%;
       transform: translateY(30%);
     }
     
