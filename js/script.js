@@ -1,7 +1,6 @@
 //highlight navlink
 function activelink() {
   var current = location.pathname.split('/')[1];
-  console.log(current);
   if (current === "") return;
   var menuItems = document.querySelectorAll('.link');
   for (var i = 0, len = menuItems.length; i < len; i++) {

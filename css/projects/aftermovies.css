@@ -43,12 +43,19 @@
 } 
 
 .section1-heading .h1 h1, .section1-heading .h1 span {
-  font-size: 6vw;
+  font-size: 0.001vw;
   font-weight: 700;
   color: #fff;
   display: flex;
   align-items: baseline;
 } 
+
+.section1-heading img {
+  width: 45vw;
+  transform: translate(-5%,-25%);
+  filter: drop-shadow(3px 8px 12px #000);
+  pointer-events: none;
+}
 
 .recap-vid-bg {
   width: 100%;
@@ -73,17 +80,21 @@
 }
 
 .section1-container h2 {
-  color: #fff;
-  text-align: center;
-  font-size: 2.5vw;
-  margin: 2vw 0;
+  font-size: 0.01vw;
+}
+
+.section1-container:nth-child(2) img {
+  width: 30vw;
+  margin: 2vw auto 2.5vw auto;
+  filter: drop-shadow(3px 8px 12px #000);
+  pointer-events: none;
 }
 
 .content-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 93%;
+  width: 90%;
   gap: 2vw;
   margin: 2vw auto;
 }
@@ -99,6 +110,17 @@
 .video-card video {
   width: 100%;
   border-radius: 20px;
+}
+
+.checkoutsocial {
+  width: 11vw;
+  position: absolute;
+  left: 44.5%;
+  transform: translateY(120%);
+}
+
+.checkoutsocial img {
+  width: 100%;
 }
 
 div.socials {
@@ -170,14 +192,6 @@ div.socials a svg:hover {
       gap: 4vw;
       justify-content: center;
     }
-    
-    .section1-heading .h1 h1, .section1-heading .h1 span {
-      font-size: 13vw;
-      font-weight: 700;
-      color: #fff;
-      display: flex;
-      align-items: baseline;
-    } 
 
     .section1-heading .team-content {
       width: 97%;
@@ -186,11 +200,12 @@ div.socials a svg:hover {
       margin: 1.5em auto 0 auto;
       text-align: center;
     }
-    
-    .section1-heading .h2 h2{
-      margin: 0.5em 0 0 0;
-      font-size: 20vw;
-      display: inline-block;
+  
+
+    .section1-heading img {
+      width: 100%;
+      padding: 1vw;
+      transform: translateX(-2%);
     }
 
     .recap-vid-bg {
@@ -203,9 +218,11 @@ div.socials a svg:hover {
       height: 93vh;
     }
 
-    .section1-container h2 {
-      font-size: 8vw;
-      margin: 8vw 0;
+    
+    .section1-container:nth-child(2) img {
+      width: 78%;
+      margin: 8vw auto 10vw auto;
+      filter: drop-shadow(3px 8px 12px #000);
     }
 
     .content-container {
@@ -226,6 +243,12 @@ div.socials a svg:hover {
     .video-card video {
       width: 100%;
       border-radius: 20px;
+    }
+    
+    .checkoutsocial {
+      width: 10em;
+      left: 32.5%;
+      transform: translateY(30%);
     }
     
     div.socials {
