@@ -425,7 +425,12 @@ div.socials a svg:hover {
       width: 100%;
       margin: 8vw 1vw 16vw 1vw;
     }
-    
+
+    .content-item:nth-child(1) .content-item-text span, .content-item:nth-child(2) .content-item-text span, .content-item:nth-child(3) .content-item-text span {
+      font-size: 4vw;
+      line-height: 6vw;
+    }
+
     .content-item:nth-child(1) {
       margin: 0;
       width: 100%;
@@ -443,12 +448,13 @@ div.socials a svg:hover {
     .content-item:nth-child(1) .content-item-text {
       color: #fff;
       font-size: 5vw;
-      line-height: 5vw;
+      line-height: 6vw;
       text-align: center;
       position: absolute;
       bottom: 0;
       transform: none;
     }
+
     
     .content-item:nth-child(2) {
       width: 100%;
@@ -467,7 +473,7 @@ div.socials a svg:hover {
     .content-item:nth-child(2) .content-item-text {
       width: 100%;
       font-size: 5vw;
-      line-height: 5vw;
+      line-height: 6vw;
       text-align: center;
       position: absolute;
       left: 0%;
@@ -491,7 +497,7 @@ div.socials a svg:hover {
       width: 100%;
       color: #fff;
       font-size: 5vw;
-      line-height: 5vw;
+      line-height: 6vw;
       text-align: center;
       position: absolute;
       left: 0%;
