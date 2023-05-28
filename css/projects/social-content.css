@@ -360,7 +360,6 @@
 .laptop-screen {
   background-color: #fff;
   position: absolute;
-  border: 1px solid white;
   height: 71%;
   width: 61.5%;
   transform:  translateX(-2%) translateY(5.1%);
