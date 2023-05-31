@@ -528,13 +528,19 @@
   width: 100%;
 }
 
-.mockup-phone-container img:nth-child(2) {
+.mockup-notif-bar{
+  position: sticky;
+  top:0;
+}
+
+.mockup-notif-bar img:nth-child(2) {
   width: 33%;
-  position: absolute;
-  top: 1%;
   left: 34%;
+  position: absolute;
+  top: 10%;
   z-index: 4;
 }
+
 
 .mockup-phone-screen {
   position: absolute;
