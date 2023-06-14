@@ -152,59 +152,57 @@
           </div>
           <div class="recap-vid-bg">
             <img src="/assets/images/projects/stage-visuals/stage.jpg" alt="">
-            <div class="screen units" >
+            <div class="screen" id="screen">
               <video muted autoplay loop>
-                <source src="/assets/images/projects/stage-visuals/pexels-rostislav-uzunov-5091624-1920x1080-24fps.mp4">
-              </video>
-              <video muted autoplay loop>
-                <source src="/assets/images/projects/stage-visuals/pexels-rostislav-uzunov-5091624-1920x1080-24fps.mp4">
+                <source src="/assets/videos/preview/stage-visuals/Doobey_3.webm">
               </video>
             </div>
           </div>
         </div>
         <div class="section1-container">
+          <span>Choose an option and it will be displayed on the stage!</span>
           <h2>Options</h2>
           <img src="/assets/images/projects/stage-visuals/options.png" alt="Options">
           <div class="content">
             <div class="content-container">
-              <a class="video-card" href="">
-                <video class="thumbnail" loop>
-                  <source src="/assets/videos/preview/aftermovies/straight-from-the-underground-aftermovie-preview.webm">
+              <a class="video-card" href="#screen" onclick="selectVisuals(this);">
+                <video class="thumbnail" muted autoplay loop>
+                  <source src="/assets/videos/preview/stage-visuals/Doobey_3.webm">
                 </video>
               </a>  
-              <a class="video-card" href="">
-                <video class="thumbnail" loop>
-                  <source src="/assets/videos/preview/aftermovies/zaeden-aftermovie-preview.webm">
+              <a class="video-card" href="" onclick="selectVisuals(this); return false">
+                <video class="thumbnail" muted autoplay loop>
+                  <source src="/assets/videos/preview/stage-visuals/Doobey_3_1.webm">
                 </video>
               </a>
-              <a class="video-card" href="">
-                <video class="thumbnail" loop>
-                  <source src="/assets/videos/preview/aftermovies/lifafa-aftermovie-preview.webm">
+              <a class="video-card" href="" onclick="selectVisuals(this); return false">
+                <video class="thumbnail" muted autoplay loop>
+                  <source src="/assets/videos/preview/stage-visuals/Doobey_3_2.webm">
                 </video>
               </a>
-              <a class="video-card" href="">
-                <video class="thumbnail" loop>
-                  <source src="/assets/videos/preview/aftermovies/mitraz-aftermovie-preview.webm">
+              <a class="video-card" href="#screen"  onclick="selectVisuals(this); return false">
+                <video class="thumbnail" muted autoplay loop>
+                  <source src="/assets/videos/preview/stage-visuals/Doobey_3_3.webm">
                 </video>
               </a>
-              <a class="video-card" href="">
-                <video class="thumbnail" loop>
-                  <source src="/assets/videos/preview/aftermovies/rahil-mehta-aftermovie-preview.webm">
+              <a class="video-card" href=""  onclick="selectVisuals(this); return false">
+                <video class="thumbnail" autoplay loop>
+                  <source src="/assets/videos/preview/stage-visuals/Doobey_3_4.webm">
                 </video>
               </a>
-              <a class="video-card" href="">
-                <video class="thumbnail" loop>
-                  <source src="/assets/videos/preview/aftermovies/did-aftermovie-preview.webm">
+              <a class="video-card" href=""  onclick="selectVisuals(this); return false;">
+                <video class="thumbnail" muted autoplay loop>
+                  <source src="/assets/videos/preview/stage-visuals/Doobey_3_5.webm">
                 </video>
               </a>
-              <a class="video-card" href="">
-                <video class="thumbnail" loop>
-                  <source src="/assets/videos/preview/aftermovies/rahil-mehta-KJ-aftermovie-preview.webm">
+              <a class="video-card" href=""  onclick="selectVisuals(this); return false;">
+                <video class="thumbnail" muted autoplay loop>
+                  <source src="/assets/videos/preview/stage-visuals/Doobey_3_6.webm">
                 </video>
               </a>
-              <a class="video-card placeholder" href="" style="pointer-events:none;">
-                <video class="thumbnail" loop>
-                  <source src="">
+              <a class="video-card" href=""  onclick="selectVisuals(this); return false;">
+                <video class="thumbnail" muted autoplay loop>
+                  <source src="/assets/videos/preview/stage-visuals/Doobey_3_7.webm">
                 </video>
                 <span></span>
               </a>
@@ -248,46 +246,66 @@
     <div class="cursor-dot"></div>
 
     <script>
-      const videos = document.querySelectorAll('.thumbnail');
+      // const videos = document.querySelectorAll('.thumbnail');
 
-      videos.forEach(video => {
-        video.addEventListener('mouseenter', () => {
-          video.play();
+      // videos.forEach(video => {
+      //   video.addEventListener('mouseenter', () => {
+      //     video.play();
+      //   });
+
+      //   video.addEventListener('mouseleave', () => {
+      //     video.pause();
+      //     video.currentTime = 0;
+      //   });
+      // });
+
+      // var header = document.querySelector('.fadeout');
+
+      function selectVisuals(obj) {
+        let screen = document.querySelector('.screen video source');
+        let vid = document.querySelector('.screen video');
+        
+        
+        let thumb = obj.firstElementChild.firstElementChild;
+        let thumbsrc = thumb.src;
+
+        screen.src = thumbsrc;
+        vid.load();
+        vid.play();
+
+        window.scroll({
+          top: 30, 
+          left: 0, 
+          behavior: 'smooth'
         });
+      }
+      
 
-        video.addEventListener('mouseleave', () => {
-          video.pause();
-          video.currentTime = 0;
-        });
-      });
+      function fadeOutOnScroll(element) {
+      	if (!element) {
+      		return;
+      	}
+      
+      	var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
+      	var elementHeight = element.offsetHeight;
+      	var scrollTop = document.documentElement.scrollTop;
+      
+      	var opacity = 1;
+      
+      	if (scrollTop > distanceToTop) {
+      		opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
+      	}
+      
+      	if (opacity >= 0) {
+      		element.style.opacity = opacity;
+      	}
+      }
 
-      var header = document.querySelector('.fadeout');
+      function scrollHandler() {
+      	fadeOutOnScroll(header);
+      }
 
-function fadeOutOnScroll(element) {
-	if (!element) {
-		return;
-	}
-	
-	var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
-	var elementHeight = element.offsetHeight;
-	var scrollTop = document.documentElement.scrollTop;
-	
-	var opacity = 1;
-	
-	if (scrollTop > distanceToTop) {
-		opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
-	}
-	
-	if (opacity >= 0) {
-		element.style.opacity = opacity;
-	}
-}
-
-function scrollHandler() {
-	fadeOutOnScroll(header);
-}
-
-window.addEventListener('scroll', scrollHandler);
+      window.addEventListener('scroll', scrollHandler);
     </script>
     <script src="/js/cursor.js"></script>
     <script src="/js/script.js"></script>
