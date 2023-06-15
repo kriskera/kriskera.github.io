@@ -899,16 +899,18 @@ div.socials a svg:hover {
       width: 8vw;
     }
     /*  */
+    .section1-container:nth-child(2)::before {
+      height: 2em;
+    }
+
     .content-container h3 {
       font-size: 12vw;
-      line-height: 10vw;
+      transform: none;
+
     }
-    
-    .content-container h3::before {
-      position: absolute;
-      transform: translateX(1.5%) translateY(4%);
-      content: "Posts / Reels";
-      color: #fff;
+
+    .insta-8bit {
+      width: 20vw;
     }
 
     .content-item {
@@ -1018,7 +1020,7 @@ div.socials a svg:hover {
 
     .mockup-phone-container img:nth-child(2) {
       width: 33%;
-      top: 1%;
+      top: 6%;
       left: 34%;
     }
 
