@@ -290,7 +290,6 @@
 
 .section1-container:nth-child(2)::before {
   content: '';
-  background:url('/assets/images/projects/social-content/tear-up.png');
   width: 100%;
   height: 8em;
   display: block;
@@ -298,6 +297,9 @@
   opacity: 0.9;
 }
 
+.insta-8bit {
+  width: 5vw;
+}
 
 .h2 {
   width: 30vw;
@@ -318,17 +320,13 @@
 
 .content-container h3 {
   width: 100%;
-  font-size: 3vw;
-  -webkit-text-stroke: #fff;
-  -webkit-text-stroke-width: 1px;
-  display: block;
-}
-
-.content-container h3::before {
-  position: absolute;
-  transform: translateX(1.5%) translateY(4%);
-  content: "Posts / Reels";
+  font-size: 2.5vw;
+  display: flex;
   color: #fff;
+  align-items: center;
+  font-family: minecraft, Poppins, Arial, Helvetica, sans-serif;
+  gap: 1em;
+  transform: translateX(60%);
 }
 
 .content-item {
@@ -642,7 +640,8 @@
 .checkoutsocial {
   width: 11vw;
   position: absolute;
-  left: 44.5%;
+  transform: translateY(80%);
+  left: 44.2%;
 }
 
 .checkoutsocial img {
