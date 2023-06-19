@@ -729,9 +729,9 @@ div.socials div a svg:hover {
 
 /* Scroll down */
 #scroll-down-animation {
-  position: absolute;
-  top: 80%;
-  left: 50%;
+    position: absolute;
+    top: 80%;
+    left: 48%;
 }
 
 #scroll-down-animation h2 {
