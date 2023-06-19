@@ -688,10 +688,6 @@ div.socials div a svg:hover {
 
   }
   /* Navbar mobile end */
-
-
-
-
   
   div.socials {
     bottom: 8vw;
@@ -730,8 +726,10 @@ div.socials div a svg:hover {
 /* Scroll down */
 #scroll-down-animation {
     position: absolute;
-    top: 80%;
-    left: 48%;
+    top: 82%;
+    left: 40%;
+    z-index: 4;
+    
 }
 
 #scroll-down-animation h2 {

@@ -229,11 +229,13 @@ div.socials a svg:hover {
     .recap-vid-bg {
       display: flex;
       justify-content: center;
+      height: 88vh;
+      overflow-y: hidden;
     }
 
     .recap-vid-bg video {
       width: auto;
-      height: 97vh;
+      height: 96vh;
     }
 
     .section1-heading .heading-logo {
@@ -245,7 +247,7 @@ div.socials a svg:hover {
     } 
 
     .recap-vid-bg:after {
-      height: 20em;
+      height: 10em;
     } 
     
     .section1-container:nth-child(2) img {

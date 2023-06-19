@@ -65,8 +65,8 @@
 
 .recap-vid-bg {
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
+  height: 88vh;
+  overflow-y: hidden;
 }
 
 .recap-vid-bg:before {
