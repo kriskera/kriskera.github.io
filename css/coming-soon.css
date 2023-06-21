@@ -1,0 +1,349 @@
+/* Section1 */
+html {
+  height: 100%;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  overflow: hidden;
+  background-color: #000;
+}
+
+.section1 {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    overflow: hidden;
+} 
+
+.section1-container {
+  width: 75%;
+  z-index: 4;
+  background: transparent;
+  pointer-events: none;
+}
+
+.section1-container-item {
+  display: block;
+  position: relative;
+  width: 66.5%;
+  margin: 0 auto;
+  background: transparent;
+}
+
+.section1-container-item .s1ci-tb {
+  width: 100%;
+  display: block;
+  margin: 0 auto 1.5vw auto;
+  color: #fff;
+  font-size: 7vw;
+  font-weight: 600;
+  background: transparent;
+}
+
+.section1-container-item .s1ci-tb img {
+  width: 2.5vw;
+  align-self: center;
+  margin-top: 3vw;
+
+  transform: translateY(20%);
+  animation: floater 2s infinite;
+  transition: ease 2s;
+}
+
+@keyframes floater {
+  0%{transform: translateY(20%);transition: ease 1s;}
+  50%{transform: translateY(-20%);transition: ease 1s;}
+}
+
+.section1-container-item .s1ci-tb .text {
+  display: flex;
+  align-items: baseline;
+  margin: 0 0.2em;
+}
+
+.section1-container-item .s1ci-tb .text div {
+  display: flex;
+  align-items: baseline;
+}
+
+.bit-color-shift .bit-letter{
+  animation: color-animation 6s linear infinite;
+}
+
+.bit-letter-1 {
+  --color-1: #FF2C49;
+  --color-2: #00D574;
+  --color-3: #7D5EF7;
+  --color-4: #00AAF8;
+  --color-5: #2FF630;
+  --color-6: #FFE751;
+  --color-7: #FF6D46;
+
+  color: #FF2C49;
+}
+
+.bit-letter-2 {
+  --color-1: #FF6D46;
+  --color-2: #FF2C49;
+  --color-3: #00D574;
+  --color-4: #7D5EF7;
+  --color-5: #00AAF8;
+  --color-6: #2FF630;
+  --color-7: #FFE751;
+
+  color: #FF6D46;
+}
+
+.bit-letter-3 {
+  --color-1: #FFE751;
+  --color-2: #FF6D46;
+  --color-3: #FF2C49;
+  --color-4: #00D574;
+  --color-5: #7D5EF7;
+  --color-6: #00AAF8;
+  --color-7: #2FF630;
+
+  color: #FFE751;
+}
+
+.bit-letter-4 {
+  --color-1: #2FF630;
+  --color-2: #FFE751;
+  --color-3: #FF6D46;
+  --color-4: #FF2C49;
+  --color-5: #00D574;
+  --color-6: #7D5EF7;
+  --color-7: #00AAF8;
+
+  color: #2FF630;
+}
+
+.bit-letter-5 {
+  --color-1: #00AAF8;
+  --color-2: #2FF630; 
+  --color-3: #FFE751;
+  --color-4: #FF6D46;
+  --color-5: #FF2C49;
+  --color-6: #00D574;
+  --color-7: #7D5EF7;
+
+  color: #00AAF8;
+}
+
+.bit-letter-6 {
+  --color-1: #7D5EF7;
+  --color-2: #00AAF8;
+  --color-3: #2FF630;
+  --color-4: #FFE751;
+  --color-5: #FF6D46;
+  --color-6: #FF2C49;
+  --color-7: #00D574;
+
+  color: #7D5EF7;
+}
+
+.bit-letter-7 {
+  --color-1: #00D574;
+  --color-2: #7D5EF7;
+  --color-3: #00AAF8;
+  --color-4: #2FF630;
+  --color-5: #FFE751;
+  --color-6: #FF6D46;
+  --color-7: #FF2C49;
+
+  color: #00D574;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  14%   {color: var(--color-1)}
+  15%   {color: var(--color-2)}
+  28%   {color: var(--color-2)}
+  29%   {color: var(--color-3)}
+  42%   {color: var(--color-3)}
+  43%   {color: var(--color-4)}
+  56%  {color: var(--color-4)}
+  57%  {color: var(--color-5)}
+  70%  {color: var(--color-5)}
+  71%  {color: var(--color-6)}
+  84%  {color: var(--color-6)}
+  85%  {color: var(--color-7)}
+  100%  {color: var(--color-7)}
+}
+
+/* Here are just some visual styles. 🖌 */
+
+.section1-container-item .s1ci-center {
+  width: 100%;
+  color: #fff;
+  font-size: 1.5vw;
+}
+
+.section1-container-item .s1ci-center span {
+  display: block;
+  line-height: 0.5vw;
+  text-align: center;
+}
+
+.section1-container-item .s1ci-center span:nth-child(2){
+  margin-right: 7vw;
+}
+
+div.socials {
+  width: 100%;
+  position: absolute;
+  display: block;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1vw;
+  gap: 1vw;
+  z-index: 4;
+  pointer-events: none;
+}
+
+div.socials>*{
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  font-size: 0.7vw;
+}
+
+div.socials div:nth-child(1){
+  justify-content: left;
+}
+
+div.socials div a {
+  color: #fff;
+  position: relative;
+  margin: 1vw;
+  pointer-events: all;
+}
+
+div.socials div a svg {
+  width: 1.2vw;
+  height: 1.2vw;
+  color: #fff;
+  fill: #fff;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+div.socials div a svg:hover {
+  /* width: 2.6vw;
+  height: 2.6vw; */
+  transform: scale(1.4);
+  color: #fff;
+  fill: #fff;
+}
+
+#cv {
+  position: absolute;
+  z-index: -1;
+  opacity: 100%;
+}
+/* Section 1 end */
+
+/* Media Queries */
+@media (max-width: 767.98px) { 
+
+  .section1 {
+      background-size: auto;
+      background-position: center;
+  }  
+
+  .section1-container {
+    width: 94%;
+    margin: 0 auto;
+  }
+
+  .section1-container-item {
+    width: 100%;
+  }
+
+  .section1-container-item .s1ci-tb {
+    margin: 0;
+    color: #fff;
+    font-size: 19vw;
+    font-weight: 600;
+    transform: translateY(-30%);
+  }
+
+  .section1-container-item .s1ci-tb img {
+    width: 7vw;
+    margin-top: 2vw;
+  }
+
+  .section1-container-item .s1ci-tb .text {
+    height: 28vw;
+  }
+
+  .section1-container-item .s1ci-center {
+    top: 80%;
+    width: 100%;
+    font-size: 4vw;
+  }
+
+  .section1-container-item .s1ci-center span {
+    line-height: 5vw;
+    transform: translateY(50%);
+  }
+
+
+  .section1-container-item .s1ci-center span:nth-child(2){
+    margin-right: 1vw;
+    right: 0;
+  }
+
+  .bit-color-shift .bit-letter{
+    animation: color-animation 6s linear infinite;
+  }
+
+  .section1-container-item .s1ci-tb .text {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 0.2em;
+    line-height: 15vw;
+  }
+  
+  div.socials {
+    bottom: 8vw;
+    margin: 0 auto;
+    padding: 2vw;
+    gap: 8vw;
+  }
+
+  div.socials div:nth-child(1), div.socials div:nth-child(3) {
+    position: absolute;
+    display: none;
+  }
+
+  div.socials div a {
+    position: relative;
+    display: inline-block;
+    margin: 0 5vw;
+  }
+
+  div.socials div a svg {
+    width: 5vw;
+    height: 5vw;
+    fill: #fff;
+    position: absolute;
+    transition: all 0.3s ease;
+  }
+  div.socials div a svg:hover {
+    /* width: 2.6vw;
+    height: 2.6vw; */
+    transform: scale(1.4);
+    fill: #fff;
+  }
+
+    /* Section 1 end */
+}
+/* Media Queries end */
