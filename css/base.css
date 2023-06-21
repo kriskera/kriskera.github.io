@@ -453,7 +453,7 @@ div.socials div a svg:hover {
 /* Scroll down */
 #scroll-down-animation {
   position: absolute;
-  top: 78vh;
+  top: 79vh;
   left: 47.2vw;
   z-index: 4;
 }
