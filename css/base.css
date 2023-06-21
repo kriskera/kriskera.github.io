@@ -775,9 +775,36 @@ animation: move 1.6s linear infinite;
 
   #scroll-down-animation {
     position: absolute;
-    top: 82%;
-    left: 40%;
+    top: 86%;
+    left: 43.2%;
     z-index: 4;
   }
+  
+  #scroll-down-animation h2 {
+    color: #fff;
+    font-family: Poppins, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 3vw;
+    }
+
+    .mouse {
+    margin: 0.5em auto;
+    display: block;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    height: 12vw;
+    width: 8.2vw;
+    position: relative;
+    }
+
+    .move {
+    height: 1.5vw;
+    width: 1.5vw;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: move 1.6s linear infinite;
+    }
+  
 }
 /* Media Queries end */
