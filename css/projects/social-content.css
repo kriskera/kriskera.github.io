@@ -243,6 +243,7 @@
 .phone:nth-child(5) .mask video {
   position: absolute;
   width: 14vw;
+  height: 100%;
 }
 
 .phone:nth-child(5) .mask img {
