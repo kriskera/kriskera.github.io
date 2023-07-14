@@ -29,7 +29,7 @@
   width: 100%;
   position: absolute;
   margin: 0vw 0;
-  padding: 2vw 4vw 4vw 4vw;
+  padding: 2vw 4vw 2vw 4vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,6 +66,7 @@
   display: flex;
   position: relative;
   width: 100%;
+  transform: translateY(3%);
 }
 
 @keyframes shrink-l2r {
@@ -98,7 +99,7 @@
 .phone:nth-child(1) .mask {
   position: absolute;
   overflow: hidden;
-  border-radius: 23px;
+  border-radius: 1.1vw;
   width: 10.1vw;
   height: 23.4vw;
   transform:  rotateX(14.4deg) rotateY(18.7deg) rotateZ(51.8deg) translateX(29.7%) translateY(-28%) rotate(-3.9deg);
@@ -139,7 +140,7 @@
 .phone:nth-child(2) .mask {
   position: absolute;
   overflow: hidden;
-  border-radius: 23px;
+  border-radius: 1.1vw;
   width: 11.5vw;
   height: 22.1vw;
   transform:  rotateX(18deg) rotateY(0deg) rotateZ(141deg) translateX(-33%) translateY(-21%);
@@ -180,7 +181,7 @@
 .phone:nth-child(3) .mask {
   position: absolute;
   overflow: hidden;
-  border-radius: 23px;
+  border-radius: 1.1vw;
   width: 11.3vw;
   height: 24.4vw;
   /* transform:  rotateX(57deg) rotateY(53deg) rotateZ(-60deg) translateX(70%) translateY(3%); */
@@ -224,7 +225,7 @@
 .phone:nth-child(4) .mask {
   position: absolute;
   overflow: hidden;
-  border-radius: 23px;
+  border-radius: 1.1vw;
   width: 10.3vw;
   height: 22vw;
   transform:  rotateX(-20deg) rotateY(-13deg) rotateZ(-24deg) translateX(35%) translateY(15%);
@@ -248,10 +249,11 @@
 
 .phone:nth-child(5) {
   position: absolute;
-  left: 38.5%;
-  bottom: 0%;
+  left: 38.5vw;
+  bottom: 9vh;
   scale: 0.8;
   z-index: 10;
+  pointer-events: none;
 }
 
 .phone:nth-child(5) .phone-img {
@@ -262,7 +264,7 @@
 .phone:nth-child(5) .mask {
   position: absolute;
   overflow: hidden;
-  border-radius: 25px;
+  border-radius: 1.2vw;
   width: 10.12vw;
   height: 21.9vw;
   transform:  rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(27.5%) translateY(24%);
@@ -327,7 +329,7 @@
   align-items: center;
   z-index: 5;
   gap: 8vw;
-  transform: translateY(10%);
+  transform: translateY(3%);
 }
 
 .whitephones div {
@@ -376,8 +378,12 @@
   width: 35vw;
 }
 
-.content-item-container {
+.content {
   width: 100%;
+}
+
+.content-item-container {
+  width: 75%;
   display: flex;
   justify-content: space-between;
 }
