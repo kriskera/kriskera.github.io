@@ -802,7 +802,11 @@ div.socials a svg:hover {
     .section1-container {
       width: 100%;
       margin: 0 auto;
-      overflow: hidden;
+    }
+
+    .section1-container:nth-child(1) {
+      flex-direction: column;
+      height: auto;
     }
 
     .section1-heading {
@@ -841,13 +845,28 @@ div.socials a svg:hover {
       align-items: center;
       gap: 10vw;
       width: 100%;
-      margin: 8vw 1vw 16vw 1vw;
+      margin: 16vw 1vw 16vw 1vw;
     }
+
+    .phone-container {
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .phone-container-container {
+      width: 100%;
+      height: 85vh;
+    }
+
     /*  */
     
     .phone:nth-child(1) {
-      left: 0%;
-      top: 13%;
+      left: -6%;
+      top: 15%;
       scale: 1;
     }
 
@@ -876,8 +895,8 @@ div.socials a svg:hover {
     /*  */
 
     .phone:nth-child(2) {
-      right: 5%;
-      top: 12%;
+      right: 2%;
+      top: 15%;
       scale: 0.9;
     }
 
@@ -909,7 +928,7 @@ div.socials a svg:hover {
 
     .phone:nth-child(3) {
       left: 0%;
-      bottom: 8%;
+      bottom: -2%;
       scale: 0.9;
     }
 
@@ -942,7 +961,7 @@ div.socials a svg:hover {
 
     .phone:nth-child(4) {
       right: 2%;
-      bottom: 8%;
+      bottom: 1%;
       scale: 0.9;
       rotate: 50deg;
     }
@@ -975,10 +994,21 @@ div.socials a svg:hover {
 
     /*  */
 
+    @keyframes scaleup {
+      from {scale: 1;}
+      to {scale: 1.6;}
+    }
+
     .phone:nth-child(5) {
-      left: 23%;
-      bottom: 30%;
       scale: 1;
+      left: 22.5%;
+      top:35%;
+      
+      animation-name: scaleup;
+      animation-delay: 4s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+      animation-duration: 1s;
     }
 
     .phone:nth-child(5) .phone-img {
@@ -1002,25 +1032,76 @@ div.socials a svg:hover {
       margin: 0.8vw;
       width: 8vw;
     }
+
+    .whitephones {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      z-index: 5;
+      gap: 8vw;
+      transform: translateY(3%);
+    }
+
+    .whitephones div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20vw;
+    }
+
+    .whitephones div div {
+      scale: 0.001;
+      width: 60vw;
+      height: 115vw;
+      border: 2px solid white;
+      background: #fff;
+      border-radius: 30px;
+      animation-name: reveal;
+      animation-delay: 5s;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+    }
+
+    .whitephones div:nth-child(1) div:nth-child(1), .whitephones div:nth-child(2) div:nth-child(2) {
+      width: 60vw;
+      height: 115vw;
+    }
+    
     /*  */
     .section1-container:nth-child(2)::before {
       height: 2em;
+      margin: 2em 0 0 0;
     }
 
     .content-container h3 {
       font-size: 12vw;
       transform: none;
-
+      display: flex;
+      justify-content: center;
     }
 
-    .insta-8bit {
-      width: 20vw;
+    .some-more {
+      width: 80%;
     }
 
     .content-item {
       width: 100%;
       flex-direction: column;
-      margin: 8vw 0;
+    }
+
+    .content-item-container {
+      flex-direction: column;
+      gap: 2em;
+    }
+
+    .cic-thumb {
+      width: 100%;
     }
 
     .mockup-laptop {
