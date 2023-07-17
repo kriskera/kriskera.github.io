@@ -353,6 +353,10 @@
   animation-iteration-count: 1;
 }
 
+.whitephones div div video, .whitephones div div img {
+  width: 100%;
+}
+
 .whitephones div:nth-child(1) div:nth-child(1), .whitephones div:nth-child(2) div:nth-child(2) {
   width: 12vw;
   height:25.5vw;
