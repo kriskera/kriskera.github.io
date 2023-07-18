@@ -864,6 +864,7 @@ div.socials a svg:hover {
       justify-content: center;
       width: 100%;
       height: 100%;
+      overflow: hidden;
     }
 
     .phone-container-container {
@@ -904,7 +905,7 @@ div.socials a svg:hover {
     /*  */
 
     .phone:nth-child(2) {
-      right: 2%;
+      right: 4%;
       top: 15%;
       scale: 0.9;
     }
@@ -936,7 +937,7 @@ div.socials a svg:hover {
     /*  */
 
     .phone:nth-child(3) {
-      left: 0%;
+      left: -4%;
       bottom: -2%;
       scale: 0.9;
     }
@@ -969,8 +970,8 @@ div.socials a svg:hover {
     /*  */
 
     .phone:nth-child(4) {
-      right: 2%;
-      bottom: 1%;
+      right: 4%;
+      bottom: -2%;
       scale: 0.9;
       rotate: 50deg;
     }
@@ -1051,7 +1052,7 @@ div.socials a svg:hover {
       justify-content: space-evenly;
       align-items: center;
       z-index: 5;
-      gap: 8vw;
+      gap: 30vw;
       transform: translateY(3%);
     }
 
@@ -1060,7 +1061,7 @@ div.socials a svg:hover {
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      gap: 20vw;
+      gap: 30vw;
     }
 
     .whitephones div div {
@@ -1068,8 +1069,8 @@ div.socials a svg:hover {
       width: 60vw;
       height: 115vw;
       border: 2px solid white;
-      background: #fff;
-      border-radius: 30px;
+      background: #ffffff;
+      border-radius: 25px;
       animation-name: reveal;
       animation-delay: 5s;
       animation-duration: 1s;
@@ -1081,11 +1082,18 @@ div.socials a svg:hover {
       width: 60vw;
       height: 115vw;
     }
+
+    .whitephones div div img {
+      height: 100%;
+      width: 100%;
+      border-radius: 25px;
+      transform: translateX(0%);
+    }
     
     /*  */
     .section1-container:nth-child(2)::before {
       height: 2em;
-      margin: 2em 0 0 0;
+      margin: 8em 0 0 0;
     }
 
     .content-container h3 {
