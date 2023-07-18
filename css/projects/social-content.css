@@ -344,7 +344,6 @@
   width: 13vw;
   height:27.489vw;
   border: 2px solid white;
-  background: #fff;
   border-radius: 30px;
   animation-name: reveal;
   animation-delay: 5s;
@@ -353,8 +352,14 @@
   animation-iteration-count: 1;
 }
 
-.whitephones div div video, .whitephones div div img {
+.whitephones div div video{
   width: 100%;
+}
+
+.whitephones div div img {
+  width: 98%;
+  border-radius: 1.2vw;
+  transform: translateX(1%);
 }
 
 .whitephones div:nth-child(1) div:nth-child(1), .whitephones div:nth-child(2) div:nth-child(2) {
