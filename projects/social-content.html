@@ -9,6 +9,7 @@
     
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/projects/social-content.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">    
     <link rel="icon" href="/assets/images/favicon.png" />
     <link rel="canonical" href="https://dreamingindigital.in/projects/music-videos.html" />
 
@@ -201,7 +202,7 @@
             </div>
           </div>
           <div class="whitephones">
-            <div>
+            <!-- <div>
               <div>
                 <img src="/assets/videos/preview/social-content/white-phones/did-campaign-reddit.jpg" alt="">
               </div>
@@ -216,7 +217,35 @@
               <div>
                 <img src="/assets/videos/preview/social-content/white-phones/did-campaign-Xrepresent.jpg" alt="">
               </div>
-            </div>
+            </div> -->
+            <section class="phone-swiper">
+              <div class="swiper-container swiper-full-mobile swiper-container-initialized swiper-container-horizontal">
+                 <div class="swiper-wrapper" >
+        
+                   <div class="swiper-slide">
+                    <img src="/assets/videos/preview/social-content/white-phones/did-campaign-hiir.jpg" alt="">
+                   </div>
+                    <div class="swiper-slide">
+                    <img src="/assets/videos/preview/social-content/white-phones/did-campaign-reddit.jpg" alt="">
+                   </div>
+                    <div class="swiper-slide">
+                    <img src="/assets/videos/preview/social-content/white-phones/did-campaign-hiir.jpg" alt="">
+                   </div>
+                   <div class="swiper-slide">
+                    <img src="/assets/videos/preview/social-content/white-phones/did-campaign-represent.jpg" alt="">
+                   </div>
+                   <div class="swiper-slide">
+                    <img src="/assets/videos/preview/social-content/white-phones/did-campaign-Xrepresent.jpg" alt="">
+                   </div>
+        
+             </div>
+        
+               <!-- Add Pagination -->
+               <div class="swiper-pagination"></div>
+               <!-- Add Arrows -->
+               <div class="swiper-button-next"></div>
+               <div class="swiper-button-prev"></div>
+        </section>
           </div>
         </div>
         <div class="section1-container">
@@ -695,6 +724,56 @@ window.addEventListener('scroll', scrollHandler);
 
       document.querySelector(".posts-btn").addEventListener('click', posts);
       document.querySelector(".reels-btn").addEventListener('click', reels);
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+    <script>
+         var swiperMobile = new Swiper('.swiper-container.swiper-full-mobile', {
+          slidesPerView: 5,
+          effect: 'coverflow',
+          spaceBetween: 50,
+          initialSlide: 2,
+          slideToClickedSlide:true,
+          centeredSlides:true,
+         pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+    
+          },
+    
+    
+          //   autoplay: {
+          //     delay: 100000,
+          //   },
+    
+    
+            keyboard: {
+            enabled: true,
+            onlyInViewport: true,
+          },
+    
+    
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+    
+    
+           breakpoints: {
+                
+                640: {
+                  freemode:true,
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                320: {
+                  freemode:true,
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                }
+          }
+    
+        });
     </script>
 </body>
 </html>

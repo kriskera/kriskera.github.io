@@ -67,6 +67,11 @@
   position: relative;
   width: 100%;
   transform: translateY(3%);
+  animation-name: shrink;
+  animation-delay: 5s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
 }
 
 @keyframes shrink-l2r {
@@ -85,7 +90,7 @@
   top: 15%;
   scale: 0.8;
   animation-name: shrink-l2r;
-  animation-delay: 4s;
+  animation-delay: 5s;
   animation-duration: 0.6s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -317,61 +322,81 @@
 
 @keyframes reveal {
   from {scale: 0.001;}
-  to {scale: 1;}
+  to {scale: 1;position: relative;}
+}
+
+@keyframes shrink {
+  from {}
+  to {
+    scale: 0.0001;
+    position: absolute;
+  }
 }
 
 .whitephones {
   width: 100%;
   height: 100%;
+  scale: 0.8;
   position: absolute;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   z-index: 5;
   gap: 8vw;
-  transform: translateY(3%);
+  transform: translateY(6%);
 }
 
-.whitephones div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 4vw;
-}
-
-.whitephones div div {
+.phone-swiper {
   scale: 0.001;
-  width: 13vw;
-  height:27.489vw;
-  border: 2px solid white;
-  border-radius: 30px;
+  width: 100%;
+  position: absolute;
   animation-name: reveal;
-  animation-delay: 5s;
-  animation-duration: 1s;
+  animation-delay: 5.3s;
+  animation-duration: 1.2s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }
 
-.whitephones div img:hover {
-  scale: 1.1;
-}
+  .swiper-container {
+    width: 100%;
+  }
 
-.whitephones div div video{
-  width: 100%;
-}
+  .swiper-full-mobile {
+    position: relative;
+    margin: 50px auto;
+    padding-bottom: 50px;
+  }
 
-.whitephones div div img {
-  width: 98%;
-  border-radius: 1.2vw;
-  transform: translateX(1%);
-  transition: scale 300ms ease;
-}
+  .swiper-full-mobile:before {
+    content: "";
+    width: 19%;
+    background: url(http://md-aqil.github.io/images/Pixel-3-XL.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0px;
+    height: 100%;
+    z-index: 2;
+    margin: auto;
+  }
 
-.whitephones div:nth-child(1) div:nth-child(1), .whitephones div:nth-child(2) div:nth-child(2) {
-  width: 12vw;
-  height:25.5vw;
-}
+  .swiper-full-mobile .swiper-slide {
+    height: 100%;
+  }
 
+  .swiper-full-mobile .swiper-slide img {
+    width: 99%;
+    height: 85%;
+    object-fit: fill;
+    transform: translateX(0%);
+  }
+
+  .swiper-slide.swiper-slide-active img {
+    border-radius: 40px;
+
+  }
 /*  */
 
 .section1-container:nth-child(2) {
@@ -811,16 +836,18 @@ div.socials a svg:hover {
 @media (max-width: 767.98px) {    
     .section1 {
       padding: 15vw 0 0 0;
+      overflow-x: hidden;
     }  
 
     .section1-container {
       width: 100%;
       margin: 0 auto;
+      position: relative;
     }
 
     .section1-container:nth-child(1) {
       flex-direction: column;
-      height: auto;
+      height: 100vh;
     }
 
     .section1-heading {
@@ -869,12 +896,12 @@ div.socials a svg:hover {
       justify-content: center;
       width: 100%;
       height: 100%;
-      overflow: hidden;
     }
 
     .phone-container-container {
       width: 100%;
       height: 85vh;
+      overflow: hidden;
     }
 
     /*  */
@@ -975,7 +1002,7 @@ div.socials a svg:hover {
     /*  */
 
     .phone:nth-child(4) {
-      right: 4%;
+      right: 5%;
       bottom: -2%;
       scale: 0.9;
       rotate: 50deg;
@@ -1050,6 +1077,7 @@ div.socials a svg:hover {
 
     .whitephones {
       width: 100%;
+      scale: 0.7;
       height: 100%;
       position: relative;
       display: flex;
@@ -1061,44 +1089,21 @@ div.socials a svg:hover {
       transform: translateY(3%);
     }
 
-    .whitephones div {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      gap: 30vw;
-    }
-
-    .whitephones div div {
-      scale: 0.001;
-      width: 60vw;
-      height: 115vw;
-      border: 2px solid white;
-      background: #ffffff;
-      border-radius: 25px;
-      animation-name: reveal;
-      animation-delay: 5s;
-      animation-duration: 1s;
-      animation-fill-mode: forwards;
-      animation-iteration-count: 1;
-    }
-
-    .whitephones div:nth-child(1) div:nth-child(1), .whitephones div:nth-child(2) div:nth-child(2) {
-      width: 60vw;
-      height: 115vw;
-    }
-
-    .whitephones div div img {
-      height: 100%;
+    .swiper-full-mobile:before {
       width: 100%;
-      border-radius: 25px;
-      transform: translateX(0%);
     }
+
+    .swiper-full-mobile .swiper-slide img {
+      width: 94%;
+      height: 100%;
+      object-fit: fill;
+      transform: translateX(3%);
+  }
     
     /*  */
+
     .section1-container:nth-child(2)::before {
-      height: 2em;
-      margin: 8em 0 0 0;
+      height: 0;
     }
 
     .content-container h3 {
