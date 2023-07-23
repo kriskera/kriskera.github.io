@@ -90,8 +90,8 @@
   top: 15%;
   scale: 0.8;
   animation-name: shrink-l2r;
-  animation-delay: 5s;
-  animation-duration: 0.6s;
+  animation-delay: 4.8s;
+  animation-duration: 0.4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }

@@ -1,0 +1,309 @@
+
+    body {
+        margin: 0;
+        background-color: #fff;
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .pointer {
+        cursor: pointer;
+    }
+    
+    .myGrid {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .top-banner {
+        width: 100%;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    #overlay-image {
+        scale: 1.02;
+        transition: scale 300ms ease;
+    }
+
+    #overlay-image:hover {
+        scale: 1;
+    }
+
+    .content-container {
+        width: 100%;
+        margin: 2em 0;
+        padding: 1em;
+        display: flex;
+        gap: 2em;
+        justify-content: center;
+    }
+    
+    .left-section {
+        width: 20%;
+        height: 100%;
+        border-radius: 4px;
+        background-image: url('https://kriskera.github.io/assets-isr/team-logos/side-banner.jpg');
+        background-size: contain;
+        background-position: top;
+        background-repeat: space;
+        flex-grow: 1;
+        gap: 4em;
+        background-color: #EC1C24;
+    }
+    
+    .main-content {
+        flex-grow: 2;
+        width: 60%;
+    }
+    
+    .right-section {
+        width: 20%;
+        height: 100%;
+        border-radius: 4px;
+        background-image: url('https://kriskera.github.io/assets-isr/team-logos/side-banner.jpg');
+        background-size: contain;
+        background-position: top;
+        background-repeat: space;
+        flex-grow: 1;
+        gap: 4em;
+        background-color: #EC1C24;
+        flex-grow: 1;
+        width: 20%;
+    }
+
+    .main-content-banner img {
+        width: 100%;
+        height: auto;
+    }
+    /* main-content items */
+    
+    .main-content-item {
+        display: flex;
+        margin: 1em 0;
+        padding: 0em 1em 1em 1em;
+        border: 1px solid rgba(0, 0, 0, 0.155);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+        transition: all 500ms ease;
+
+        border-radius: 5px;
+        background: linear-gradient(145deg, #d1d1d1, #f8f8f8);
+        box-shadow:  5px 5px 31px #d1d1d1,
+             -5px -5px 31px #ffffff;
+
+    }
+    
+    .main-content-item:hover {
+        background: linear-gradient(145deg, #ffffff, #d8d8d8);
+        box-shadow:  29px 29px 59px #d6d6d6,
+             -29px -29px 59px #ffffff;
+    }
+
+    .nl {
+        flex-basis: 33%;
+    }
+    
+    .nl>span,
+    .nl>img {
+        vertical-align: middle;
+        padding: 0.5em;
+    }
+    
+    .matchNumber {
+        width: 100%;
+        vertical-align: middle;
+        line-height: 2em;
+        font-size: 1.2em;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+        font-weight: 600;
+    }
+    
+    .dateVenueTime {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 1.5em;
+        line-height: 1em;
+        border-top: 1px solid rgba(0, 0, 0, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+        color: rgb(7, 11, 36);
+        font-weight: 600;
+        font-size: 1em;
+    }
+    
+    .dateVenueTime>span {
+        width: 153px;
+        padding: 1em;
+    }
+
+    .dateVenueTime>span:nth-child(2) {
+        width: auto;
+    }
+
+    .city {
+        padding: 0.6em 0.6em 0 0.6em;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    
+    .matchCard {
+        width: 100%;
+        padding: 0.2em;
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        justify-content: center;
+        font-size: 1em;
+        font-weight: 500;
+    }
+    
+    .nl {
+        width: 100%;
+        padding: 0em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1em;
+    }
+
+    .vs {
+        width: 30%;
+    }
+    
+    .t1 {
+        justify-content: flex-end;
+    }
+    
+    .vs>span {
+        padding: 4px;
+        border: 2px solid black;
+        border-radius: 8px;
+        font-weight: 600;
+    }
+    
+    .t2 {
+        justify-content: flex-start;
+    }
+    
+    .pmtpBox {
+        display: flex;
+        margin: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 3px;
+        font-size: 1.2em;
+        background: #f0f0f0;
+        box-shadow:  29px 29px 59px #d6d6d6,
+             -29px -29px 59px #ffffff;
+    }
+    
+    .pmtpBox a {
+        width: 50%;
+        text-decoration: none;
+        color: #000;
+    }
+        
+    .PressMeet,
+    .TeamPractice {
+        flex: 50%;
+        padding: 3em 1em;
+        border-radius: 5px;
+        transition: all 500ms ease;
+    }
+
+    .PressMeet:hover,
+    .TeamPractice:hover {
+        color: #212529;
+        background: linear-gradient(145deg, #d8d8d8, #ffffff);
+        box-shadow:  22px 22px 43px #e6e6e6,
+             -22px -22px 43px #fafafa;
+        text-decoration: none;
+    }
+
+    
+    #overlay-image {
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 1;
+    }
+    
+    @media (max-width: 991.98px) {
+        
+        .pmtpBox {
+            font-size: 3vw;
+            font-weight: 600;
+        }
+        
+        .PressMeet, .TeamPractice {
+            padding: 1vw;
+        }
+
+        .main-content-item {
+            padding: 0.5em 0;
+        }
+        
+        .matchCard {
+            padding: 0.3em;
+            font-size: 3vw;
+            font-weight: 600;
+        }
+        .dateVenueTime {
+            font-size: 3.5vw;
+            padding: 5vw 0;
+        }
+
+        .matchNumber {
+            font-size: 4vw;
+            padding: 0em;
+        }
+        
+        .dateVenueTime>span {
+            padding: 1em 0;
+        }
+
+        .city {
+            font-size: 4vw;
+        }
+
+        .nl {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+
+        .t1 {
+            flex-direction: column-reverse;
+        }
+        
+        .nl>img {
+            height: 10vw;
+        }
+
+        .left-section, .right-section {
+            display: none;
+            position: absolute;
+        }
+    }
+    /* media queries end */
