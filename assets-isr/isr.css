@@ -1,4 +1,4 @@
-
+<style>
     body {
         margin: 0;
         background-color: #fff;
@@ -46,7 +46,6 @@
 
     .content-container {
         width: 100%;
-        margin: 2em 0;
         padding: 1em;
         display: flex;
         gap: 2em;
@@ -307,3 +306,4 @@
         }
     }
     /* media queries end */
+</style>
