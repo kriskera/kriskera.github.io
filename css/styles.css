@@ -281,12 +281,12 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 .section1-container-item .s1ci-center {
   position: absolute;
-  top: 53%;
+  top: 55%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   color: #fff;
-  font-size: 0.8vw;
+  font-size: 1.2vw;
 }
 
 .section1-container-item .s1ci-center span {
