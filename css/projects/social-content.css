@@ -255,8 +255,8 @@
 .phone:nth-child(5) {
   position: absolute;
   left: 38vw;
-  bottom: 9vh;
-  scale: 0.8;
+  bottom: 11vh;
+  scale: 0.7;
   z-index: 10;
   pointer-events: none;
 }
