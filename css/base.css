@@ -759,7 +759,6 @@ animation: move 1.6s linear infinite;
 
   div.socials div a {
     position: relative;
-    display: inline-block;
     margin: 0 5vw;
   }
 
