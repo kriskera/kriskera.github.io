@@ -314,8 +314,8 @@ div.socials a svg:hover {
     
     .checkoutsocial {
       width: 10em;
-      left: 32%;
-      transform: translateY(30%);
+      left: 30%;
+      transform: translateY(0%);
     }
     
     div.socials {
