@@ -218,7 +218,7 @@ div.socials a svg:hover {
     .recap-vid-bg {
       display: flex;
       justify-content: center;
-      height: 90vh;
+      height: 89vh;
       overflow-y: hidden;
     }
 
@@ -272,8 +272,8 @@ div.socials a svg:hover {
     
     .checkoutsocial {
       width: 10em;
-      left: 32%;
-      transform: translateY(30%);
+      left: 30%;
+      transform: translateY(-10%);
     }
     
     div.socials {
