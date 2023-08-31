@@ -84,6 +84,10 @@ a {
   align-items: center;
 }
 
+.navbar-pc-container a {
+  display: flex;
+}
+
 .navbar-pc-container .logo {
   width: 3vw;
 }
