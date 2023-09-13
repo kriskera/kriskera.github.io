@@ -68,7 +68,7 @@
   width: 100%;
   transform: translateY(3%);
   animation-name: shrink;
-  animation-delay: 5s;
+  animation-delay: 5.7s;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
@@ -90,7 +90,7 @@
   top: 15%;
   scale: 0.8;
   animation-name: shrink-l2r;
-  animation-delay: 4.8s;
+  animation-delay: 5.2s;
   animation-duration: 0.4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -131,7 +131,7 @@
   top: 12%;
   scale: 0.65;
   animation-name: shrink-r2l;
-  animation-delay: 4.3s;
+  animation-delay: 5s;
   animation-duration: 0.6s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -172,7 +172,7 @@
   bottom: -5%;
   scale: 0.7;
   animation-name: shrink-l2r;
-  animation-delay: 4.5s;
+  animation-delay: 4.8s;
   animation-duration: 0.6s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -216,7 +216,7 @@
   scale: 0.65;
   rotate: 50deg;
   animation-name: shrink-r2l;
-  animation-delay: 4.5s;
+  animation-delay: 5.4s;
   animation-duration: 0.7s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -351,7 +351,7 @@
   width: 100%;
   position: absolute;
   animation-name: reveal;
-  animation-delay: 5.3s;
+  animation-delay: 6s;
   animation-duration: 1.2s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
@@ -656,148 +656,7 @@
   width: 100%;
 }
 /* Clients */
-/*  */
-.mockup-phone-container:hover {
-  scale: 1.05;
-}
 
-.mockup-phone-screen::-webkit-scrollbar {
-  display: none;
-}
-
-.mockup-phone-screen {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.mockup-phone {
-  width: 45%;
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-
-.mockup-phone-container {
-  width: 12vw;
-  position: relative;
-  transition: scale 500ms ease;
-}
-
-.mockup-phone-container img:nth-child(1) {
-  width: 100%;
-}
-
-.mockup-notif-bar{
-  position: sticky;
-  top:0;
-}
-
-.mockup-notif-bar img:nth-child(2) {
-  width: 33%;
-  left: 34%;
-  position: absolute;
-  top: 10%;
-  z-index: 4;
-}
-
-
-.mockup-phone-screen {
-  position: absolute;
-  width: 90%;
-  height: 94%;
-  transform: translateX(6%);
-  border-radius: 25px;
-  overflow: scroll;
-  background-color: #fff;
-  top: 2%;
-}
-
-.insta-top-bar {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 0.4vw;
-}
-
-.insta-top-bar span {
-  font-size: 0.5vw;
-  font-weight: 600;
-}
-
-.insta-content {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.insta-content .laptop-screen-container-header-logo {
-  width: 30%;
-  border-radius: 50%;
-  background-color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0.8vw 0.5vw 0 0.5vw;
-}
-
-.insta-content .laptop-screen-container-header-logo img{
-  width: 100%;
-  scale: 2;
-}
-
-
-.insta-desc:nth-child(2) {
-  font-size: 0.4vw;
-  font-weight: 500;
-  line-height: 0.5vw;  
-  padding: 0 0.5vw;
-}
-
-.insta-content .insta-btns {
-  width: 100%;
-  display: flex;
-  margin: 0.4vw 0;
-  gap: 0.2vw;
-  padding: 0 0.5vw;
-
-}
-
-.insta-content .insta-btns span:nth-child(1) {
-  width: 100%;
-  padding: 0.2em 1em;
-  font-size: 0.5vw;
-  color: #fff;
-  background-color: #0095f6;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.insta-content .insta-btns span:nth-child(2) {
-  width: 100%;
-  padding: 0.2em 1em;
-  font-size: 0.5vw;
-  color: #000;
-  background-color: #e4e4e4;
-  border-radius: 4px;
-    text-align: center;
-}
-
-.insta-content .feed {
-  width: 100%;
-  display: flex;
-  gap: 0.vw;
-  justify-content: center;
-  flex-wrap: wrap;
-  line-height: 0vw;
-}
-
-.insta-content .feed div {
-  width: 32%;
-}
-.insta-content .feed div img{
-  width: 100%;
-}
-
-
-/*  */
 .checkoutsocial {
   width: 11vw;
   position: absolute;
@@ -1063,7 +922,6 @@ div.socials a svg:hover {
       scale: 1;
       left: 22.5%;
       top:35%;
-      
       animation-name: scaleup;
       animation-delay: 4s;
       animation-fill-mode: forwards;
